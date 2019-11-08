@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		02A0B534D2DCB172D9568E77B388EF9C /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DD8981E4513FB89A9BBE69B3A840966 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26824B190AF77A23400431CE3FED6C33 /* SLTopMiniApps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CC60884DD093705F2336C113FA47A9 /* SLTopMiniApps-dummy.m */; };
-		4752B6754EDA409A8D4A9F47BAC6DDDC /* MiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66E355FC0262A0ED6DF18B37D540773 /* MiniApp.swift */; };
 		4908CD76BA17F6C3BD6C4ABF88CC1A89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		53561761C8DE9B621E6327711DD8FF40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		710182642375524900D1ECFF /* SLTopMiniApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710182612375524900D1ECFF /* SLTopMiniApps.swift */; };
+		710182652375524900D1ECFF /* MiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710182622375524900D1ECFF /* MiniApp.swift */; };
+		710182662375524900D1ECFF /* AppMiniCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710182632375524900D1ECFF /* AppMiniCell.swift */; };
 		737EB895F00C1EAE14B27999AC9555F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A5DB2FD6D59D78DB505100ED53721B86 /* SLTopMiniApps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5963BE7ABC59E2872F49E40BB0B0BAE /* SLTopMiniApps.bundle */; };
-		C0F05BEBA88AA92F0796D7EC1898CF26 /* AppMiniCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13DE8E1D47B9CFAE86996CFD3574B59 /* AppMiniCell.swift */; };
 		C8D3E2B0D3B99A2C8381760B083B32E0 /* Pods-SLTopMiniApps_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF11CA60CD5CF6E0370A1E52101F4B /* Pods-SLTopMiniApps_Example-dummy.m */; };
 		DDED4C53A4940B9064A9A31D3959C8FC /* SLTopMiniApps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4D50CEB51733FC5681FFA07859952F /* SLTopMiniApps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DDF3C7F0DC1A33BB6CF3486D2A7AA02C /* SLTopMiniApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DD36A47A93305FC14318D8128ED796 /* SLTopMiniApps.swift */; };
 		E5385E460DF620BAB6B06B0C272C65F3 /* Pods-SLTopMiniApps_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F00C0468BB0D5737976AED2F2746EA /* Pods-SLTopMiniApps_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F837D921182C5E46E8A04245FAD5B779 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 313E5D02F29D7ABEFF5D95196BC63585 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -64,21 +64,21 @@
 		612DA906D82BA3F374FE8D0212E0D549 /* Pods_SLTopMiniApps_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLTopMiniApps_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B4500164F49297C451820E596DED52 /* SLTopMiniApps.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SLTopMiniApps.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		68EB0131A7A1D0D635912F74E2B4AD00 /* Pods-SLTopMiniApps_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SLTopMiniApps_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		710182612375524900D1ECFF /* SLTopMiniApps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SLTopMiniApps.swift; path = SLTopMiniApps/Classes/SLTopMiniApps.swift; sourceTree = "<group>"; };
+		710182622375524900D1ECFF /* MiniApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiniApp.swift; path = SLTopMiniApps/Classes/MiniApp.swift; sourceTree = "<group>"; };
+		710182632375524900D1ECFF /* AppMiniCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppMiniCell.swift; path = SLTopMiniApps/Classes/AppMiniCell.swift; sourceTree = "<group>"; };
 		7A28A2BF4D88FB1646E0DB35467A5346 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		82CF829E7132BB940ADFF26A8194E756 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E987ABD9C18CB0F3224346230303782 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A13DE8E1D47B9CFAE86996CFD3574B59 /* AppMiniCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppMiniCell.swift; path = SLTopMiniApps/Classes/AppMiniCell.swift; sourceTree = "<group>"; };
 		A5963BE7ABC59E2872F49E40BB0B0BAE /* SLTopMiniApps.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLTopMiniApps.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B871DD6AB5713FB1E031C297CB0A25 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-Info.plist"; sourceTree = "<group>"; };
 		B97EB52BCA136CC267CE0133DD65DCEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BED8380D64FC9FB12D39E40E580F9DC2 /* Pods-SLTopMiniApps_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SLTopMiniApps_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C38430700E4DAE8A40058E515730E8E3 /* Pods-SLTopMiniApps_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C6CC60884DD093705F2336C113FA47A9 /* SLTopMiniApps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SLTopMiniApps-dummy.m"; sourceTree = "<group>"; };
-		C6DD36A47A93305FC14318D8128ED796 /* SLTopMiniApps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SLTopMiniApps.swift; path = SLTopMiniApps/Classes/SLTopMiniApps.swift; sourceTree = "<group>"; };
 		CFDF14FE1FCA751CAF72615467A5E189 /* SLTopMiniApps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SLTopMiniApps.xcconfig; sourceTree = "<group>"; };
 		D22EB30632959D13B6A6875779F7DE93 /* Pods-SLTopMiniApps_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-Info.plist"; sourceTree = "<group>"; };
-		D66E355FC0262A0ED6DF18B37D540773 /* MiniApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MiniApp.swift; path = SLTopMiniApps/Classes/MiniApp.swift; sourceTree = "<group>"; };
 		E59718F7726A7664D09862217F1813CD /* ResourceBundle-SLTopMiniApps-SLTopMiniApps-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SLTopMiniApps-SLTopMiniApps-Info.plist"; sourceTree = "<group>"; };
 		E73FA376152F3801A870EAC104929DB4 /* Pods-SLTopMiniApps_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E8DEBF879B7CEB8FB98E3C921FFF1E00 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,9 +157,9 @@
 		71E2F9F11FE1F878F1E09F8A63A97DDC /* SLTopMiniApps */ = {
 			isa = PBXGroup;
 			children = (
-				C6DD36A47A93305FC14318D8128ED796 /* SLTopMiniApps.swift */,
-				A13DE8E1D47B9CFAE86996CFD3574B59 /* AppMiniCell.swift */,
-				D66E355FC0262A0ED6DF18B37D540773 /* MiniApp.swift */,
+				710182632375524900D1ECFF /* AppMiniCell.swift */,
+				710182622375524900D1ECFF /* MiniApp.swift */,
+				710182612375524900D1ECFF /* SLTopMiniApps.swift */,
 				6981277F8F79B423D6FB3B881B2F7BA0 /* Pod */,
 				5436F44EA8740EE1314130031C333AE3 /* Support Files */,
 			);
@@ -360,6 +360,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					043AC403EDE97AA6845C6C58C1B76288 = {
+						LastSwiftMigration = 1120;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -426,10 +431,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0F05BEBA88AA92F0796D7EC1898CF26 /* AppMiniCell.swift in Sources */,
-				4752B6754EDA409A8D4A9F47BAC6DDDC /* MiniApp.swift in Sources */,
+				710182642375524900D1ECFF /* SLTopMiniApps.swift in Sources */,
+				710182662375524900D1ECFF /* AppMiniCell.swift in Sources */,
 				26824B190AF77A23400431CE3FED6C33 /* SLTopMiniApps-dummy.m in Sources */,
-				DDF3C7F0DC1A33BB6CF3486D2A7AA02C /* SLTopMiniApps.swift in Sources */,
+				710182652375524900D1ECFF /* MiniApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +563,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFDF14FE1FCA751CAF72615467A5E189 /* SLTopMiniApps.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -590,6 +596,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFDF14FE1FCA751CAF72615467A5E189 /* SLTopMiniApps.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -610,6 +617,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
