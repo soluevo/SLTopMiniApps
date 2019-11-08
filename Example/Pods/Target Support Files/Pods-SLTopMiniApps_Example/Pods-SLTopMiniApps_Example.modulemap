@@ -1,0 +1,6 @@
+framework module Pods_SLTopMiniApps_Example {
+  umbrella header "Pods-SLTopMiniApps_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

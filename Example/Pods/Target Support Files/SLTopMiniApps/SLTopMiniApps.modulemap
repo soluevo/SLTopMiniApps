@@ -1,0 +1,6 @@
+framework module SLTopMiniApps {
+  umbrella header "SLTopMiniApps-umbrella.h"
+
+  export *
+  module * { export * }
+}

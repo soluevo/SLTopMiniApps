@@ -13,7 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		66A9CC7268C5E1C35B0CCE47 /* Pods_SLTopMiniApps_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D43AB34754FB4A6E993C30 /* Pods_SLTopMiniApps_Tests.framework */; };
+		7101825F237547DD00D1ECFF /* SecViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7101825E237547DD00D1ECFF /* SecViewController.swift */; };
+		828AF801A2B09614ABFCAF1B /* Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0B6D716179327429B493B1 /* Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework */; };
 		980161019AA5F005EAC1A127 /* Pods_SLTopMiniApps_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660FC45667EA768A8BB440E6 /* Pods_SLTopMiniApps_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +30,13 @@
 
 /* Begin PBXFileReference section */
 		00B180A6511236449186EB51 /* Pods-SLTopMiniApps_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTopMiniApps_Example.debug.xcconfig"; path = "Target Support Files/Pods-SLTopMiniApps_Example/Pods-SLTopMiniApps_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		08661292B9AF74B9EAF5E9D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1C45C033175DFA1FBA97E8E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		08661292B9AF74B9EAF5E9D3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1C45C033175DFA1FBA97E8E9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		39396190AF0684E937C1A513 /* Pods-SLTopMiniApps_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTopMiniApps_Tests.release.xcconfig"; path = "Target Support Files/Pods-SLTopMiniApps_Tests/Pods-SLTopMiniApps_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3A0B6D716179327429B493B1 /* Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D542C5B98DF5DFD3CA97144 /* Pods-SLTopMiniApps_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTopMiniApps_Example.release.xcconfig"; path = "Target Support Files/Pods-SLTopMiniApps_Example/Pods-SLTopMiniApps_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4EA970A16337277F1C5BF7EB /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig"; path = "Target Support Files/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		56608755A93C210E793B5A26 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SLTopMiniApps_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLTopMiniApps_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,9 +48,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		660FC45667EA768A8BB440E6 /* Pods_SLTopMiniApps_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLTopMiniApps_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7101825E237547DD00D1ECFF /* SecViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecViewController.swift; sourceTree = "<group>"; };
 		C79A813169CF163A48BFCCBC /* Pods-SLTopMiniApps_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SLTopMiniApps_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SLTopMiniApps_Tests/Pods-SLTopMiniApps_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D4D43AB34754FB4A6E993C30 /* Pods_SLTopMiniApps_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SLTopMiniApps_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D84AB1A432F5AECA58EA9AC2 /* SLTopMiniApps.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SLTopMiniApps.podspec; path = ../SLTopMiniApps.podspec; sourceTree = "<group>"; };
+		D84AB1A432F5AECA58EA9AC2 /* SLTopMiniApps.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SLTopMiniApps.podspec; path = ../SLTopMiniApps.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66A9CC7268C5E1C35B0CCE47 /* Pods_SLTopMiniApps_Tests.framework in Frameworks */,
+				828AF801A2B09614ABFCAF1B /* Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +99,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				7101825E237547DD00D1ECFF /* SecViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -146,8 +151,9 @@
 				3D542C5B98DF5DFD3CA97144 /* Pods-SLTopMiniApps_Example.release.xcconfig */,
 				C79A813169CF163A48BFCCBC /* Pods-SLTopMiniApps_Tests.debug.xcconfig */,
 				39396190AF0684E937C1A513 /* Pods-SLTopMiniApps_Tests.release.xcconfig */,
+				56608755A93C210E793B5A26 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig */,
+				4EA970A16337277F1C5BF7EB /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -155,7 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				660FC45667EA768A8BB440E6 /* Pods_SLTopMiniApps_Example.framework */,
-				D4D43AB34754FB4A6E993C30 /* Pods_SLTopMiniApps_Tests.framework */,
+				3A0B6D716179327429B493B1 /* Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,7 +177,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				3F93538A0124063C4C0AF1D9 /* [CP] Embed Pods Frameworks */,
+				2D6BD0CDEAB6A230A3A6C8F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,7 +196,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				1AC8D4F14631B9E72EE5419F /* [CP] Embed Pods Frameworks */,
+				A0098E281A28940B598A52E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +234,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -263,25 +270,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1AC8D4F14631B9E72EE5419F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SLTopMiniApps_Tests/Pods-SLTopMiniApps_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SLTopMiniApps_Tests/Pods-SLTopMiniApps_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3F93538A0124063C4C0AF1D9 /* [CP] Embed Pods Frameworks */ = {
+		2D6BD0CDEAB6A230A3A6C8F5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,7 +303,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SLTopMiniApps_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -343,6 +332,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A0098E281A28940B598A52E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SLTopMiniApps/SLTopMiniApps.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SLTopMiniApps.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -352,6 +359,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				7101825F237547DD00D1ECFF /* SecViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +532,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C79A813169CF163A48BFCCBC /* Pods-SLTopMiniApps_Tests.debug.xcconfig */;
+			baseConfigurationReference = 56608755A93C210E793B5A26 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -546,7 +554,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39396190AF0684E937C1A513 /* Pods-SLTopMiniApps_Tests.release.xcconfig */;
+			baseConfigurationReference = 4EA970A16337277F1C5BF7EB /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
