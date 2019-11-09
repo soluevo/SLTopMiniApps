@@ -82,9 +82,9 @@ class SLTopMiniApps: UIView {
     func show(){
         if (self.miniApps?.count ?? 0) > 0 {
             self.isHidden = false
-            self.layer.zPosition = CGFloat(self.target?.view.subviews.count ?? 0)
+            self.layer.zPosition = 1000
             UIView.animate(withDuration: 1) {
-                self.target?.navigationController?.navigationBar.alpha = 0
+//                self.target?.navigationController?.navigationBar.alpha = 0
             }
             UIView.animate(withDuration: 1.5) {
                 self.alpha = 1
@@ -94,7 +94,7 @@ class SLTopMiniApps: UIView {
     
     func hide(){
         UIView.animate(withDuration: 1) {
-            self.target?.navigationController?.navigationBar.alpha = 1
+//            self.target?.navigationController?.navigationBar.alpha = 1
         }
         UIView.animate(withDuration: 1.5, animations: {
             self.alpha = 0
@@ -115,8 +115,10 @@ class SLTopMiniApps: UIView {
         
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeDown.direction = .down
-        target.view.addGestureRecognizer(swipeDown)
-        target.navigationController?.view.addGestureRecognizer(swipeDown)
+        let swipeDown2 = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
+        swipeDown2.direction = .down
+        target.view.addGestureRecognizer(swipeDown2)
+        target.navigationController?.navigationBar.addGestureRecognizer(swipeDown)
     }
     
     private func addBlurEffect(){
@@ -161,7 +163,7 @@ class SLTopMiniApps: UIView {
             self.hide()
         }else if gesture.direction == .down {
             let point = gesture.location(in: target?.view).y
-            if point > 0 && point < 100 {
+            if point < 70 {
                 self.show()
             }
         }
