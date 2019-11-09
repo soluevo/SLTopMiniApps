@@ -22,12 +22,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SLTopMiniAppsWith(target: self, title: "Outros Apps", isReproduce: true, apps: [
+        SLTopMiniAppsWith(target: self, title: "Mais Apps", detail: "Selecione um novo app para acessar.", isReproduce: true, apps: [
             SLMiniApp(title: "Casas Bahia", icon: #imageLiteral(resourceName: "unnamed"), headView: ViewController()),
             SLMiniApp(title: "HP", icon: #imageLiteral(resourceName: "images"), headView: SecViewController()),
-            SLMiniApp(title: "HP", icon: #imageLiteral(resourceName: "images"), headView: SecViewController()),
-            SLMiniApp(title: "HP", icon: #imageLiteral(resourceName: "images"), headView: SecViewController()),
-            SLMiniApp(title: "HP", icon: #imageLiteral(resourceName: "images"), headView: SecViewController())
+            SLMiniApp(title: "Ponto Frio", icon: #imageLiteral(resourceName: "images"), headView: SecViewController()),
+            SLMiniApp(title: "Extra", icon: #imageLiteral(resourceName: "images"), headView: SecViewController()),
+            SLMiniApp(title: "Ricardo Eletro", icon: #imageLiteral(resourceName: "images"), headView: SecViewController())
         ])
         
         self.view.addSubview(icon)

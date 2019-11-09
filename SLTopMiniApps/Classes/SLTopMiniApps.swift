@@ -10,12 +10,12 @@ import UIKit
 
 @available(iOS 9.0, *)
 
-public func SLTopMiniAppsWith(target: UIViewController, title: String, isReproduce: Bool, apps: [SLMiniApp]) {
-    SLTopMiniApps(title: title, isReproduce: isReproduce, apps: apps).insertIn(target: target)
+public func SLTopMiniAppsWith(target: UIViewController, title: String, detail: String = "", isReproduce: Bool, apps: [SLMiniApp]) {
+    SLTopMiniApps(title: title, detail: detail, isReproduce: isReproduce, apps: apps).insertIn(target: target)
 }
 
 @available(iOS 9.0, *)
-class SLTopMiniApps: UIView, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
+class SLTopMiniApps: UIView {
     
     var miniApps: [SLMiniApp]?
     var target: UIViewController?
@@ -40,9 +40,20 @@ class SLTopMiniApps: UIView, UICollectionViewDataSource, UICollectionViewDelegat
         return title
     }()
     
-    public init(title: String, isReproduce: Bool = true, apps: [SLMiniApp]) {
+    lazy var detail: UILabel = {
+        let title = UILabel(frame: .zero)
+        title.translatesAutoresizingMaskIntoConstraints = false
+        title.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        title.textAlignment = .center
+        title.textColor = .white
+        title.numberOfLines = 0
+        return title
+    }()
+    
+    public init(title: String, detail: String = "", isReproduce: Bool = true, apps: [SLMiniApp]) {
         super.init(frame: CGRect.zero)
         self.title.text = title
+        self.detail.text = detail
         self.set(apps: apps)
         
         self.alpha = 0
@@ -69,13 +80,15 @@ class SLTopMiniApps: UIView, UICollectionViewDataSource, UICollectionViewDelegat
     }
     
     func show(){
-        self.isHidden = false
-        self.layer.zPosition = CGFloat(self.target?.view.subviews.count ?? 0)
-        UIView.animate(withDuration: 1) {
-            self.target?.navigationController?.navigationBar.alpha = 0
-        }
-        UIView.animate(withDuration: 1.5) {
-            self.alpha = 1
+        if (self.miniApps?.count ?? 0) > 0 {
+            self.isHidden = false
+            self.layer.zPosition = CGFloat(self.target?.view.subviews.count ?? 0)
+            UIView.animate(withDuration: 1) {
+                self.target?.navigationController?.navigationBar.alpha = 0
+            }
+            UIView.animate(withDuration: 1.5) {
+                self.alpha = 1
+            }
         }
     }
     
@@ -95,14 +108,15 @@ class SLTopMiniApps: UIView, UICollectionViewDataSource, UICollectionViewDelegat
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = .clear
         target.view.addSubview(self)
-        collection.leftAnchor.constraint(equalTo: target.view.leftAnchor).isActive = true
-        collection.rightAnchor.constraint(equalTo: target.view.rightAnchor).isActive = true
-        collection.topAnchor.constraint(equalTo: target.view.topAnchor, constant: 100).isActive = true
-        collection.bottomAnchor.constraint(equalTo: target.view.bottomAnchor).isActive = true
+        self.leftAnchor.constraint(equalTo: target.view.leftAnchor).isActive = true
+        self.rightAnchor.constraint(equalTo: target.view.rightAnchor).isActive = true
+        self.topAnchor.constraint(equalTo: target.view.topAnchor, constant: 0).isActive = true
+        self.bottomAnchor.constraint(equalTo: target.view.bottomAnchor).isActive = true
         
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeDown.direction = .down
         target.view.addGestureRecognizer(swipeDown)
+        target.navigationController?.view.addGestureRecognizer(swipeDown)
     }
     
     private func addBlurEffect(){
@@ -122,30 +136,40 @@ class SLTopMiniApps: UIView, UICollectionViewDataSource, UICollectionViewDelegat
     private func loadSubViews(){
         self.addSubview(title)
         title.topAnchor.constraint(equalTo: self.topAnchor, constant: 60).isActive = true
-        title.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 16).isActive = true
-        title.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -16).isActive = true
+        title.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15).isActive = true
+        title.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15).isActive = true
         title.heightAnchor.constraint(equalToConstant: 20).isActive = true
         
         self.collection.removeFromSuperview()
         self.addSubview(collection)
         collection.delegate = self
         collection.dataSource = self
-        collection.topAnchor.constraint(equalTo: self.title.bottomAnchor, constant: 20).isActive = true
-        collection.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0).isActive = true
-        collection.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true
-        collection.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0).isActive = true
-        let width = CGFloat(UIScreen.main.bounds.width - 100) / 2.0
-        collection.heightAnchor.constraint(equalToConstant: width * CGFloat(miniApps?.count ?? 0)/2.0).isActive = true
+        collection.topAnchor.constraint(equalTo: self.title.bottomAnchor, constant: 30).isActive = true
+        collection.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15).isActive = true
+        collection.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15).isActive = true
+        collection.clipsToBounds = true
+        
+        self.addSubview(detail)
+        detail.topAnchor.constraint(equalTo: collection.bottomAnchor, constant: 30).isActive = true
+        detail.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15).isActive = true
+        detail.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15).isActive = true
+        detail.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50).isActive = true
     }
     
     @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
         if gesture.direction == .up {
             self.hide()
         }else if gesture.direction == .down {
-            self.show()
+            let point = gesture.location(in: target?.view).y
+            if point > 0 && point < 100 {
+                self.show()
+            }
         }
     }
-    
+}
+
+@available(iOS 9.0, *)
+extension SLTopMiniApps: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return miniApps?.count ?? 0
     }
@@ -158,12 +182,13 @@ class SLTopMiniApps: UIView, UICollectionViewDataSource, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = CGFloat(UIScreen.main.bounds.width - 60) / 4.0
-        return CGSize(width: width, height: (width))
+        let isSmall = UIScreen.main.bounds.width <= 320
+        let width = CGFloat(UIScreen.main.bounds.width - 80) / 4.0
+        return CGSize(width: width, height: (width + width * (isSmall ? 0.7 : 0.4)))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        return UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
