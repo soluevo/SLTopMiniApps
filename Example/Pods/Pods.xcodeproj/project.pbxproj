@@ -8,17 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		02A0B534D2DCB172D9568E77B388EF9C /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DD8981E4513FB89A9BBE69B3A840966 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16F9E037FA6512B89092488A833D32DB /* SLTopMiniApps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2624FAAD47B6B1D9522191421DC8513C /* SLTopMiniApps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06DEF3E1584CF8D81B9F3637A9B45A95 /* nikeLogo.png in Sources */ = {isa = PBXBuildFile; fileRef = 3D87A2AE3AE53D268AEEF0EFD4A678D3 /* nikeLogo.png */; };
+		10F97D6C918D0ADDACF9A73E25076169 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		28540796855B8254512DF43A1756C9E8 /* EmptyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6390D9BF578B7C803220039D9579B0F4 /* EmptyComponent.swift */; };
+		2DBB88B453F59EF9AA58A61CB09A8D9D /* ModuleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AACBC64564B343A82222B5850137B8 /* ModuleController.swift */; };
+		3FF85F1388A25040A1C8E605800988EC /* SLTopMiniApps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D969296B3DDC91B3E29AAAE9B74933 /* SLTopMiniApps-dummy.m */; };
+		44BFE0F7A1B438E62F031250F671F2E3 /* ModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D704773B915717EF3E00563FA76E1225 /* ModuleCell.swift */; };
 		53561761C8DE9B621E6327711DD8FF40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		710003EC41394CA1A4AA442EDCC3A53A /* SLTopMiniApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF40BC58AE868285216A8CC96CACB8 /* SLTopMiniApps.swift */; };
+		5743814E5B88F9419A0094F500AB2D42 /* menu.png in Sources */ = {isa = PBXBuildFile; fileRef = 19EF957D64BF71A0243A07009DC18CBE /* menu.png */; };
+		5EC8A084EB93433C9D24EA0AF9B9B8A6 /* SamsungViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D16482984B3F13A3376C0A45D61FF0 /* SamsungViewController.swift */; };
+		64E06345981745ABB0A81E82FB437F6D /* img1.png in Sources */ = {isa = PBXBuildFile; fileRef = F9DC8A505D500C3D8AA5A0A513447092 /* img1.png */; };
 		737EB895F00C1EAE14B27999AC9555F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C8A066CD4C0E8D9D199EDB7E16E8320F /* AppMiniCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33470AE110CC84B92E46544CA437C9 /* AppMiniCell.swift */; };
+		75C3A7CCE8132BB1E6277B01889DFA6A /* hpLogo.png in Sources */ = {isa = PBXBuildFile; fileRef = 19C8250E68513E9EB35D5BCD42D552C4 /* hpLogo.png */; };
+		7602B60D0286AA9EF0BC1445D2E9F88C /* img3.png in Sources */ = {isa = PBXBuildFile; fileRef = E2DFDAC5FF2FD1E6FA903F497017C28B /* img3.png */; };
+		862088442D443DFB39BD3C8780E219B1 /* SLTopMiniApps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B92E4D300D2026EDC2972A82257DC02B /* SLTopMiniApps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97055B272411E870B4AA079B7A3F83F5 /* HeaderTitleModularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A31972715CF45D85928121A34246E3C /* HeaderTitleModularView.swift */; };
+		9857226BC64821CB85E7C160A3B11DDC /* SLTopMiniApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED61212F2D69E5363B7C5D6E56D8376A /* SLTopMiniApps.swift */; };
+		A14CB68580DD570BC50C06433CDEF07B /* img4.png in Sources */ = {isa = PBXBuildFile; fileRef = 9585AFEB1576C2A867AE1D770EF407E4 /* img4.png */; };
+		AAC45FC590C9B5A9D5CDA79EB8186903 /* AppMiniCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD2FBD05D67B72B74BB9995785B8F87 /* AppMiniCell.swift */; };
+		ABFEEF45313B861BC801AB6941594969 /* SectionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1963E286E8780C6B5EAB90BB54CCA616 /* SectionComponent.swift */; };
+		B0B2F9493115EE3175691D4471153085 /* ImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6803894686E2419FFC864B17DEAC09 /* ImageComponent.swift */; };
+		C1C84BC8B0BD6CD4974BBDF5BDC10988 /* samsungLogo.png in Sources */ = {isa = PBXBuildFile; fileRef = B681E2C1E6F5E7F4B7667B22F997857F /* samsungLogo.png */; };
+		C601033E7FAB59555984458B1471BF95 /* CBLogo.png in Sources */ = {isa = PBXBuildFile; fileRef = 4C6820DA8662D5655A1028949D36EFB6 /* CBLogo.png */; };
+		C7C733600DA79C0A398615B4CBC60AFA /* MiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FE6EFF04EB1001BDC1811463FC1579 /* MiniApp.swift */; };
 		C8D3E2B0D3B99A2C8381760B083B32E0 /* Pods-SLTopMiniApps_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF11CA60CD5CF6E0370A1E52101F4B /* Pods-SLTopMiniApps_Example-dummy.m */; };
-		CE6372E2EE27DF5E337DC93D5A30FC30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		E5385E460DF620BAB6B06B0C272C65F3 /* Pods-SLTopMiniApps_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F00C0468BB0D5737976AED2F2746EA /* Pods-SLTopMiniApps_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F31E2D2F46A42EAEF1A5E9474C4B44F6 /* SLTopMiniApps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F41F845E2377D5321F8EF5C35EDA83FB /* SLTopMiniApps-dummy.m */; };
 		F837D921182C5E46E8A04245FAD5B779 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 313E5D02F29D7ABEFF5D95196BC63585 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m */; };
-		FD40BFEA76C3FFCC26AAD5280D37282A /* MiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF48C267330DB7580922991B1D8CE64E /* MiniApp.swift */; };
+		FD5861FCB20410B8F24246280E803EED /* img2.png in Sources */ = {isa = PBXBuildFile; fileRef = 23C43383EFFF09C5ABA18FDFD162904C /* img2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,46 +58,62 @@
 		039835D53D32BDFBB17D494171047FFB /* SLTopMiniApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SLTopMiniApps.framework; path = SLTopMiniApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7532085206E10DC4F745FC9065091D /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.modulemap"; sourceTree = "<group>"; };
 		0FEF11CA60CD5CF6E0370A1E52101F4B /* Pods-SLTopMiniApps_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SLTopMiniApps_Example-dummy.m"; sourceTree = "<group>"; };
+		1963E286E8780C6B5EAB90BB54CCA616 /* SectionComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionComponent.swift; path = SLTopMiniApps/Classes/SectionComponent.swift; sourceTree = "<group>"; };
+		19C8250E68513E9EB35D5BCD42D552C4 /* hpLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = hpLogo.png; sourceTree = "<group>"; };
+		19EF957D64BF71A0243A07009DC18CBE /* menu.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		23C43383EFFF09C5ABA18FDFD162904C /* img2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = img2.png; sourceTree = "<group>"; };
 		2474F85AE10BC3E1EC5F374F7DD7C61F /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		2624FAAD47B6B1D9522191421DC8513C /* SLTopMiniApps-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTopMiniApps-umbrella.h"; sourceTree = "<group>"; };
+		2D5587373950F2D1789BD909E11B7B83 /* SLTopMiniApps.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SLTopMiniApps.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		30C709175BFFB9CC19177E9CCCD597FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		313E5D02F29D7ABEFF5D95196BC63585 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m"; sourceTree = "<group>"; };
+		31EA5172415FEBBA51A15A922DF3241A /* SLTopMiniApps-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SLTopMiniApps-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3D87A2AE3AE53D268AEEF0EFD4A678D3 /* nikeLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = nikeLogo.png; sourceTree = "<group>"; };
 		3DD8981E4513FB89A9BBE69B3A840966 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h"; sourceTree = "<group>"; };
 		41F00C0468BB0D5737976AED2F2746EA /* Pods-SLTopMiniApps_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SLTopMiniApps_Example-umbrella.h"; sourceTree = "<group>"; };
 		42783CD2EB10D989BECC7CA16EE63687 /* Pods-SLTopMiniApps_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SLTopMiniApps_Example.modulemap"; sourceTree = "<group>"; };
-		4790D0FA5C21AE560BC27A5ABE2FFFE9 /* SLTopMiniApps-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTopMiniApps-prefix.pch"; sourceTree = "<group>"; };
+		47D969296B3DDC91B3E29AAAE9B74933 /* SLTopMiniApps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SLTopMiniApps-dummy.m"; sourceTree = "<group>"; };
 		49C601137F93CB4AAC168842342C1272 /* Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A81B76207C15AA3D6A21F09C4919D5E /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4C33470AE110CC84B92E46544CA437C9 /* AppMiniCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppMiniCell.swift; path = SLTopMiniApps/Classes/AppMiniCell.swift; sourceTree = "<group>"; };
+		4B727084BEDC4B03CEC6C3B8F61C141C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		4C6820DA8662D5655A1028949D36EFB6 /* CBLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = CBLogo.png; sourceTree = "<group>"; };
 		51F93F7B219369B585D865C9F1F1D5F9 /* Pods-SLTopMiniApps_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example.release.xcconfig"; sourceTree = "<group>"; };
+		535DA87BF298B0D3590C53CCC4A17AB3 /* SLTopMiniApps.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SLTopMiniApps.modulemap; sourceTree = "<group>"; };
+		58AACBC64564B343A82222B5850137B8 /* ModuleController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleController.swift; path = SLTopMiniApps/Classes/ModuleController.swift; sourceTree = "<group>"; };
 		612DA906D82BA3F374FE8D0212E0D549 /* Pods_SLTopMiniApps_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SLTopMiniApps_Example.framework; path = "Pods-SLTopMiniApps_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6390D9BF578B7C803220039D9579B0F4 /* EmptyComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmptyComponent.swift; path = SLTopMiniApps/Classes/EmptyComponent.swift; sourceTree = "<group>"; };
 		68EB0131A7A1D0D635912F74E2B4AD00 /* Pods-SLTopMiniApps_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SLTopMiniApps_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6F78F4EB58724A15384F5880E22390E3 /* SLTopMiniApps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SLTopMiniApps.xcconfig; sourceTree = "<group>"; };
 		7A28A2BF4D88FB1646E0DB35467A5346 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		860914430D91634CEBF04EB87A6E0333 /* SLTopMiniApps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SLTopMiniApps.xcconfig; sourceTree = "<group>"; };
-		8B257F4997A7E599D18CD1A55112998F /* SLTopMiniApps-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SLTopMiniApps-Info.plist"; sourceTree = "<group>"; };
+		7A31972715CF45D85928121A34246E3C /* HeaderTitleModularView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderTitleModularView.swift; path = SLTopMiniApps/Classes/HeaderTitleModularView.swift; sourceTree = "<group>"; };
+		9585AFEB1576C2A867AE1D770EF407E4 /* img4.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
+		9D6803894686E2419FFC864B17DEAC09 /* ImageComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageComponent.swift; path = SLTopMiniApps/Classes/ImageComponent.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E987ABD9C18CB0F3224346230303782 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A4FF40BC58AE868285216A8CC96CACB8 /* SLTopMiniApps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SLTopMiniApps.swift; path = SLTopMiniApps/Classes/SLTopMiniApps.swift; sourceTree = "<group>"; };
+		9F9017EF47459940131F92DFF17C7390 /* SLTopMiniApps-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTopMiniApps-prefix.pch"; sourceTree = "<group>"; };
 		B3B871DD6AB5713FB1E031C297CB0A25 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-Info.plist"; sourceTree = "<group>"; };
-		BE54F4CAD1834292B589F1BF47B7E9F9 /* SLTopMiniApps.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SLTopMiniApps.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B681E2C1E6F5E7F4B7667B22F997857F /* samsungLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = samsungLogo.png; sourceTree = "<group>"; };
+		B92E4D300D2026EDC2972A82257DC02B /* SLTopMiniApps-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTopMiniApps-umbrella.h"; sourceTree = "<group>"; };
+		B9D16482984B3F13A3376C0A45D61FF0 /* SamsungViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SamsungViewController.swift; path = SLTopMiniApps/Classes/SamsungViewController.swift; sourceTree = "<group>"; };
 		BED8380D64FC9FB12D39E40E580F9DC2 /* Pods-SLTopMiniApps_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SLTopMiniApps_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C38430700E4DAE8A40058E515730E8E3 /* Pods-SLTopMiniApps_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		D22EB30632959D13B6A6875779F7DE93 /* Pods-SLTopMiniApps_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-Info.plist"; sourceTree = "<group>"; };
-		D37A5BCFCFCBE6CF93036DE51289202E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D5FE6EFF04EB1001BDC1811463FC1579 /* MiniApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MiniApp.swift; path = SLTopMiniApps/Classes/MiniApp.swift; sourceTree = "<group>"; };
+		D704773B915717EF3E00563FA76E1225 /* ModuleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleCell.swift; path = SLTopMiniApps/Classes/ModuleCell.swift; sourceTree = "<group>"; };
+		DFD2FBD05D67B72B74BB9995785B8F87 /* AppMiniCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppMiniCell.swift; path = SLTopMiniApps/Classes/AppMiniCell.swift; sourceTree = "<group>"; };
+		E2DFDAC5FF2FD1E6FA903F497017C28B /* img3.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = img3.png; sourceTree = "<group>"; };
 		E73FA376152F3801A870EAC104929DB4 /* Pods-SLTopMiniApps_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E8DEBF879B7CEB8FB98E3C921FFF1E00 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EDF306A64EAFAA774FEC0F53E562CF1A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		EF48C267330DB7580922991B1D8CE64E /* MiniApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MiniApp.swift; path = SLTopMiniApps/Classes/MiniApp.swift; sourceTree = "<group>"; };
-		F41F845E2377D5321F8EF5C35EDA83FB /* SLTopMiniApps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SLTopMiniApps-dummy.m"; sourceTree = "<group>"; };
-		FD06F88687ECDCF5F7B4976893921F06 /* SLTopMiniApps.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SLTopMiniApps.modulemap; sourceTree = "<group>"; };
+		ED61212F2D69E5363B7C5D6E56D8376A /* SLTopMiniApps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SLTopMiniApps.swift; path = SLTopMiniApps/Classes/SLTopMiniApps.swift; sourceTree = "<group>"; };
+		F9DC8A505D500C3D8AA5A0A513447092 /* img1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A526928180996387BCFBE37DBEE9F389 /* Frameworks */ = {
+		0E71DEC161E239F0CD2550B7029A84F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6372E2EE27DF5E337DC93D5A30FC30 /* Foundation.framework in Frameworks */,
+				10F97D6C918D0ADDACF9A73E25076169 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,22 +136,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6DF8174FF24FF761965A94D4F9D9FB9D /* Development Pods */ = {
+		251E17613C986F858118D2A341134737 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B17AAFCC6C397379EB5BAEF0C085A54E /* SLTopMiniApps */,
+				558EE6881E12BDEC860ED6332527550F /* SLTopMiniApps */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		6EAB333F28D9E66557FB5F4C82FA75E7 /* Pod */ = {
+		49463AA0C0230317A5C1CF5BB3EBE795 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EDF306A64EAFAA774FEC0F53E562CF1A /* LICENSE */,
-				D37A5BCFCFCBE6CF93036DE51289202E /* README.md */,
-				BE54F4CAD1834292B589F1BF47B7E9F9 /* SLTopMiniApps.podspec */,
+				535DA87BF298B0D3590C53CCC4A17AB3 /* SLTopMiniApps.modulemap */,
+				6F78F4EB58724A15384F5880E22390E3 /* SLTopMiniApps.xcconfig */,
+				47D969296B3DDC91B3E29AAAE9B74933 /* SLTopMiniApps-dummy.m */,
+				31EA5172415FEBBA51A15A922DF3241A /* SLTopMiniApps-Info.plist */,
+				9F9017EF47459940131F92DFF17C7390 /* SLTopMiniApps-prefix.pch */,
+				B92E4D300D2026EDC2972A82257DC02B /* SLTopMiniApps-umbrella.h */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SLTopMiniApps";
+			sourceTree = "<group>";
+		};
+		558EE6881E12BDEC860ED6332527550F /* SLTopMiniApps */ = {
+			isa = PBXGroup;
+			children = (
+				DFD2FBD05D67B72B74BB9995785B8F87 /* AppMiniCell.swift */,
+				6390D9BF578B7C803220039D9579B0F4 /* EmptyComponent.swift */,
+				7A31972715CF45D85928121A34246E3C /* HeaderTitleModularView.swift */,
+				9D6803894686E2419FFC864B17DEAC09 /* ImageComponent.swift */,
+				D5FE6EFF04EB1001BDC1811463FC1579 /* MiniApp.swift */,
+				D704773B915717EF3E00563FA76E1225 /* ModuleCell.swift */,
+				58AACBC64564B343A82222B5850137B8 /* ModuleController.swift */,
+				B9D16482984B3F13A3376C0A45D61FF0 /* SamsungViewController.swift */,
+				1963E286E8780C6B5EAB90BB54CCA616 /* SectionComponent.swift */,
+				ED61212F2D69E5363B7C5D6E56D8376A /* SLTopMiniApps.swift */,
+				886FBAD8DCFC76FE3CB71485230D70C9 /* Images */,
+				E0EF66177CA73E6E99DADC5D81A0573B /* Pod */,
+				49463AA0C0230317A5C1CF5BB3EBE795 /* Support Files */,
+			);
+			name = SLTopMiniApps;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		71960121809B033F88CFA2C5D87416DF /* Products */ = {
@@ -158,6 +215,23 @@
 			path = "Target Support Files/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests";
 			sourceTree = "<group>";
 		};
+		886FBAD8DCFC76FE3CB71485230D70C9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4C6820DA8662D5655A1028949D36EFB6 /* CBLogo.png */,
+				19C8250E68513E9EB35D5BCD42D552C4 /* hpLogo.png */,
+				F9DC8A505D500C3D8AA5A0A513447092 /* img1.png */,
+				23C43383EFFF09C5ABA18FDFD162904C /* img2.png */,
+				E2DFDAC5FF2FD1E6FA903F497017C28B /* img3.png */,
+				9585AFEB1576C2A867AE1D770EF407E4 /* img4.png */,
+				19EF957D64BF71A0243A07009DC18CBE /* menu.png */,
+				3D87A2AE3AE53D268AEEF0EFD4A678D3 /* nikeLogo.png */,
+				B681E2C1E6F5E7F4B7667B22F997857F /* samsungLogo.png */,
+			);
+			name = Images;
+			path = SLTopMiniApps/Classes/Images;
+			sourceTree = "<group>";
+		};
 		A8A422017A4930B33E6615F40B955C5F /* Pods-SLTopMiniApps_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,19 +249,6 @@
 			path = "Target Support Files/Pods-SLTopMiniApps_Example";
 			sourceTree = "<group>";
 		};
-		B17AAFCC6C397379EB5BAEF0C085A54E /* SLTopMiniApps */ = {
-			isa = PBXGroup;
-			children = (
-				4C33470AE110CC84B92E46544CA437C9 /* AppMiniCell.swift */,
-				EF48C267330DB7580922991B1D8CE64E /* MiniApp.swift */,
-				A4FF40BC58AE868285216A8CC96CACB8 /* SLTopMiniApps.swift */,
-				6EAB333F28D9E66557FB5F4C82FA75E7 /* Pod */,
-				D4C9E0B6CB7F64331B2B34F7CEA11EE2 /* Support Files */,
-			);
-			name = SLTopMiniApps;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				6DF8174FF24FF761965A94D4F9D9FB9D /* Development Pods */,
+				251E17613C986F858118D2A341134737 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				71960121809B033F88CFA2C5D87416DF /* Products */,
 				77E22112E484127126AD906E96A0066F /* Targets Support Files */,
@@ -215,28 +276,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D4C9E0B6CB7F64331B2B34F7CEA11EE2 /* Support Files */ = {
+		E0EF66177CA73E6E99DADC5D81A0573B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				FD06F88687ECDCF5F7B4976893921F06 /* SLTopMiniApps.modulemap */,
-				860914430D91634CEBF04EB87A6E0333 /* SLTopMiniApps.xcconfig */,
-				F41F845E2377D5321F8EF5C35EDA83FB /* SLTopMiniApps-dummy.m */,
-				8B257F4997A7E599D18CD1A55112998F /* SLTopMiniApps-Info.plist */,
-				4790D0FA5C21AE560BC27A5ABE2FFFE9 /* SLTopMiniApps-prefix.pch */,
-				2624FAAD47B6B1D9522191421DC8513C /* SLTopMiniApps-umbrella.h */,
+				30C709175BFFB9CC19177E9CCCD597FF /* LICENSE */,
+				4B727084BEDC4B03CEC6C3B8F61C141C /* README.md */,
+				2D5587373950F2D1789BD909E11B7B83 /* SLTopMiniApps.podspec */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SLTopMiniApps";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2F5BDB77C38B55D6927B286B7CDE0C06 /* Headers */ = {
+		80B1A859B3BB38B7807EAB4C769866AD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16F9E037FA6512B89092488A833D32DB /* SLTopMiniApps-umbrella.h in Headers */,
+				862088442D443DFB39BD3C8780E219B1 /* SLTopMiniApps-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,12 +318,12 @@
 /* Begin PBXNativeTarget section */
 		043AC403EDE97AA6845C6C58C1B76288 /* SLTopMiniApps */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B2E4D8B2705C7A93135E296BAB3AD8A /* Build configuration list for PBXNativeTarget "SLTopMiniApps" */;
+			buildConfigurationList = 74F4579D330149A275BFEC2EF5DB3C15 /* Build configuration list for PBXNativeTarget "SLTopMiniApps" */;
 			buildPhases = (
-				2F5BDB77C38B55D6927B286B7CDE0C06 /* Headers */,
-				FBB88349924CFD436AFD2D13DA328970 /* Sources */,
-				A526928180996387BCFBE37DBEE9F389 /* Frameworks */,
-				AA0E7BF4F4AA84A1F4DCC63A2AE3D1D9 /* Resources */,
+				80B1A859B3BB38B7807EAB4C769866AD /* Headers */,
+				A01BDBBFC770E30AB4404B2DB0059F4C /* Sources */,
+				0E71DEC161E239F0CD2550B7029A84F7 /* Frameworks */,
+				0E29BCDB48ABEB35F1672B889E1117C7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -344,7 +401,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AA0E7BF4F4AA84A1F4DCC63A2AE3D1D9 /* Resources */ = {
+		0E29BCDB48ABEB35F1672B889E1117C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,14 +441,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBB88349924CFD436AFD2D13DA328970 /* Sources */ = {
+		A01BDBBFC770E30AB4404B2DB0059F4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8A066CD4C0E8D9D199EDB7E16E8320F /* AppMiniCell.swift in Sources */,
-				FD40BFEA76C3FFCC26AAD5280D37282A /* MiniApp.swift in Sources */,
-				F31E2D2F46A42EAEF1A5E9474C4B44F6 /* SLTopMiniApps-dummy.m in Sources */,
-				710003EC41394CA1A4AA442EDCC3A53A /* SLTopMiniApps.swift in Sources */,
+				AAC45FC590C9B5A9D5CDA79EB8186903 /* AppMiniCell.swift in Sources */,
+				C601033E7FAB59555984458B1471BF95 /* CBLogo.png in Sources */,
+				28540796855B8254512DF43A1756C9E8 /* EmptyComponent.swift in Sources */,
+				97055B272411E870B4AA079B7A3F83F5 /* HeaderTitleModularView.swift in Sources */,
+				75C3A7CCE8132BB1E6277B01889DFA6A /* hpLogo.png in Sources */,
+				B0B2F9493115EE3175691D4471153085 /* ImageComponent.swift in Sources */,
+				64E06345981745ABB0A81E82FB437F6D /* img1.png in Sources */,
+				FD5861FCB20410B8F24246280E803EED /* img2.png in Sources */,
+				7602B60D0286AA9EF0BC1445D2E9F88C /* img3.png in Sources */,
+				A14CB68580DD570BC50C06433CDEF07B /* img4.png in Sources */,
+				5743814E5B88F9419A0094F500AB2D42 /* menu.png in Sources */,
+				C7C733600DA79C0A398615B4CBC60AFA /* MiniApp.swift in Sources */,
+				44BFE0F7A1B438E62F031250F671F2E3 /* ModuleCell.swift in Sources */,
+				2DBB88B453F59EF9AA58A61CB09A8D9D /* ModuleController.swift in Sources */,
+				06DEF3E1584CF8D81B9F3637A9B45A95 /* nikeLogo.png in Sources */,
+				C1C84BC8B0BD6CD4974BBDF5BDC10988 /* samsungLogo.png in Sources */,
+				5EC8A084EB93433C9D24EA0AF9B9B8A6 /* SamsungViewController.swift in Sources */,
+				ABFEEF45313B861BC801AB6941594969 /* SectionComponent.swift in Sources */,
+				3FF85F1388A25040A1C8E605800988EC /* SLTopMiniApps-dummy.m in Sources */,
+				9857226BC64821CB85E7C160A3B11DDC /* SLTopMiniApps.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,38 +486,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2D329FFC4D7157C5695B6EA83F02E85E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 860914430D91634CEBF04EB87A6E0333 /* SLTopMiniApps.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SLTopMiniApps/SLTopMiniApps-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SLTopMiniApps/SLTopMiniApps-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SLTopMiniApps/SLTopMiniApps.modulemap";
-				PRODUCT_MODULE_NAME = SLTopMiniApps;
-				PRODUCT_NAME = SLTopMiniApps;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		2F5DF84805A56B8CDBED4227753E4623 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E73FA376152F3801A870EAC104929DB4 /* Pods-SLTopMiniApps_Example.debug.xcconfig */;
@@ -477,6 +518,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		3F32F0538E970CC6BEC899E70D373AFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F78F4EB58724A15384F5880E22390E3 /* SLTopMiniApps.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SLTopMiniApps/SLTopMiniApps-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SLTopMiniApps/SLTopMiniApps-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SLTopMiniApps/SLTopMiniApps.modulemap";
+				PRODUCT_MODULE_NAME = SLTopMiniApps;
+				PRODUCT_NAME = SLTopMiniApps;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		7198289C4E1AA3185834B66D9A46BDBE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -544,6 +617,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		A2349446E0F77B1C21B045FB0CBC1993 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F78F4EB58724A15384F5880E22390E3 /* SLTopMiniApps.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SLTopMiniApps/SLTopMiniApps-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SLTopMiniApps/SLTopMiniApps-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SLTopMiniApps/SLTopMiniApps.modulemap";
+				PRODUCT_MODULE_NAME = SLTopMiniApps;
+				PRODUCT_NAME = SLTopMiniApps;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B0087CB4594321EF41619F3181FE120E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -703,49 +807,9 @@
 			};
 			name = Debug;
 		};
-		D917EE14FF46999CFBBE5892913818FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 860914430D91634CEBF04EB87A6E0333 /* SLTopMiniApps.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SLTopMiniApps/SLTopMiniApps-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SLTopMiniApps/SLTopMiniApps-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SLTopMiniApps/SLTopMiniApps.modulemap";
-				PRODUCT_MODULE_NAME = SLTopMiniApps;
-				PRODUCT_NAME = SLTopMiniApps;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B2E4D8B2705C7A93135E296BAB3AD8A /* Build configuration list for PBXNativeTarget "SLTopMiniApps" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D917EE14FF46999CFBBE5892913818FA /* Debug */,
-				2D329FFC4D7157C5695B6EA83F02E85E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -760,6 +824,15 @@
 			buildConfigurations = (
 				7198289C4E1AA3185834B66D9A46BDBE /* Debug */,
 				B4AB9D42BD583F6425833D13B11CD624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F4579D330149A275BFEC2EF5DB3C15 /* Build configuration list for PBXNativeTarget "SLTopMiniApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2349446E0F77B1C21B045FB0CBC1993 /* Debug */,
+				3F32F0538E970CC6BEC899E70D373AFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
