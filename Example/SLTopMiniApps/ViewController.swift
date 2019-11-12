@@ -16,19 +16,14 @@ class ViewController: UIViewController {
         icon.translatesAutoresizingMaskIntoConstraints = false
         icon.contentMode = .scaleAspectFit
         icon.clipsToBounds = true
-        icon.image = #imageLiteral(resourceName: "unnamed")
+        icon.image = #imageLiteral(resourceName: "backgroundTest")
         return icon
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SLTopMiniAppsWith(target: self, title: "Mais Apps", detail: "Selecione um novo app para acessar.", isReproduce: true, apps: [
-            SLMiniApp(title: "Casas Bahia", icon: #imageLiteral(resourceName: "unnamed"), headView: ViewController()),
-            SLMiniApp(title: "HP", icon: #imageLiteral(resourceName: "images"), headView: SecViewController()),
-            SLMiniApp(title: "Ponto Frio", icon: #imageLiteral(resourceName: "images"), headView: SecViewController()),
-            SLMiniApp(title: "Extra", icon: #imageLiteral(resourceName: "images"), headView: SecViewController()),
-            SLMiniApp(title: "Ricardo Eletro", icon: #imageLiteral(resourceName: "images"), headView: SecViewController())
-        ])
+        SLTopMiniAppsTarget(self)
+        SLTopMiniFirstVC = self
         
         self.view.addSubview(icon)
         icon.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true

@@ -1,6 +1,6 @@
 {
   "name": "SLTopMiniApps",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "summary": "This framework was created to make it easy to create a pull to down menu.",
   "homepage": "https://github.com/soluevo/SLTopMiniApps",
   "license": {
@@ -12,12 +12,17 @@
   },
   "source": {
     "git": "https://github.com/soluevo/SLTopMiniApps.git",
-    "tag": "0.2.0"
+    "tag": "0.4.0"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source_files": "SLTopMiniApps/Classes/**/*",
+  "resource_bundles": {
+    "SLTopMiniApps": [
+      "SLTopMiniApps/Assets/*.png"
+    ]
+  },
   "swift_versions": "5.0",
   "swift_version": "5.0"
 }

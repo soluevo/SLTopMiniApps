@@ -10,8 +10,42 @@ import UIKit
 
 @available(iOS 9.0, *)
 
+public var SLTopMiniFirstVC: UIViewController?
+
 public func SLTopMiniAppsWith(target: UIViewController, title: String, detail: String = "", isReproduce: Bool, apps: [SLMiniApp]) {
     SLTopMiniApps(title: title, detail: detail, isReproduce: isReproduce, apps: apps).insertIn(target: target)
+}
+
+public func SLTopMiniAppsTarget(_ target: UIViewController) {
+    let samsung = UINavigationController(rootViewController: SamsungViewController())
+    
+    
+    let apps = SLTopMiniApps(title: "Mais Apps", detail: "Selecione um novo app para acessar.", isReproduce: false, apps: [
+            SLMiniApp(title: "Samsung", icon: getImage(named: "samsungLogo"), headView: samsung),
+            SLMiniApp(title: "Nike", icon: getImage(named: "nikeLogo"), headView: UIViewController()),
+            SLMiniApp(title: "HP", icon: getImage(named: "hpLogo"), headView: UIViewController())
+        ]
+    )
+    apps.insertIn(target: target)
+}
+
+public func SLTopMiniAppsInterTarget(_ target: UIViewController, isShow: Bool = false) {
+    let samsung = UINavigationController(rootViewController: SamsungViewController())
+    
+    let apps = SLTopMiniApps(title: "Mais Apps", detail: "Selecione um novo app para acessar.", isReproduce: false, apps: [
+            SLMiniApp(title: "Casas Bahia", icon: getImage(named: "CBLogo"), headView: SLTopMiniFirstVC),
+            SLMiniApp(title: "Samsung", icon: getImage(named: "samsungLogo"), headView: samsung),
+            SLMiniApp(title: "Nike", icon: getImage(named: "nikeLogo"), headView: UIViewController()),
+            SLMiniApp(title: "HP", icon: getImage(named: "hpLogo"), headView: UIViewController())
+        ]
+    )
+    apps.insertIn(target: target)
+    apps.change(isShow: isShow)
+}
+
+public func getImage(named: String) -> UIImage {
+    guard let image = UIImage(named: named, in: Bundle(for: SLTopMiniApps.self), compatibleWith: nil) else {return UIImage()}
+    return image
 }
 
 @available(iOS 9.0, *)
@@ -70,6 +104,15 @@ class SLTopMiniApps: UIView {
     
     public func insertIn(target: UIViewController) {
         self.insertToTarget(target)
+    }
+    
+    public func change(isShow: Bool) {
+        if isShow {
+            self.target?.view.gestureRecognizers?.forEach{$0.removeTarget(self, action: nil)}
+            self.show()
+        }else{
+            self.hide()
+        }
     }
     
     func set(apps: [SLMiniApp]?) {
