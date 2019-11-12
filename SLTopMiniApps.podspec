@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SLTopMiniApps'
-  s.version          = '0.6.0'
+  s.version          = '0.7.0'
   s.summary          = 'This framework was created to make it easy to create a pull to down menu.'
 
   s.homepage         = 'https://github.com/soluevo/SLTopMiniApps'
@@ -22,9 +22,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SLTopMiniApps/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SLTopMiniApps' => ['SLTopMiniApps/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'SLTopMiniApps' => ['SLTopMiniApps/Assets/*.png']
+   }
 
   s.swift_version = '5.0'
 

@@ -18,6 +18,11 @@
     "ios": "9.0"
   },
   "source_files": "SLTopMiniApps/Classes/**/*",
+  "resource_bundles": {
+    "SLTopMiniApps": [
+      "SLTopMiniApps/Assets/*.png"
+    ]
+  },
   "swift_versions": "5.0",
   "swift_version": "5.0"
 }

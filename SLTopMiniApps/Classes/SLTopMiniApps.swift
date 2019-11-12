@@ -44,7 +44,10 @@ public func SLTopMiniAppsInterTarget(_ target: UIViewController, isShow: Bool = 
 }
 
 public func getImage(named: String) -> UIImage {
-    guard let image = UIImage(named: named, in: Bundle(for: SLTopMiniApps.self), compatibleWith: nil) else {return UIImage()}
+    let bundle = Bundle(for: SLTopMiniApps.self)
+    let bundleURL = bundle.resourceURL?.appendingPathComponent("SLTopMiniApps.bundle")
+    let resourceBundle = Bundle(url: bundleURL!)
+    guard let image = UIImage(named: named, in: resourceBundle, compatibleWith: nil) else {return UIImage()}
     return image
 }
 
