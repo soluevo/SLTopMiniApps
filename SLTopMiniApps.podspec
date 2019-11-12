@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SLTopMiniApps'
-  s.version          = '0.7.0'
+  s.version          = '0.10.0'
   s.summary          = 'This framework was created to make it easy to create a pull to down menu.'
 
   s.homepage         = 'https://github.com/soluevo/SLTopMiniApps'

@@ -6,6 +6,14 @@
 //  Copyright © 2019 Soluevo. All rights reserved.
 //
 
+//
+//  TopMiniCollection.swift
+//  TopMiniApps
+//
+//  Created by Pedro Albuquerque on 08/11/19.
+//  Copyright © 2019 Soluevo. All rights reserved.
+//
+
 import UIKit
 
 @available(iOS 9.0, *)
@@ -19,7 +27,7 @@ public func SLTopMiniAppsWith(target: UIViewController, title: String, detail: S
 public func SLTopMiniAppsTarget(_ target: UIViewController) {
     let samsung = UINavigationController(rootViewController: SamsungViewController())
     
-    
+    SLTopMiniFirstVC = target
     let apps = SLTopMiniApps(title: "Mais Apps", detail: "Selecione um novo app para acessar.", isReproduce: false, apps: [
             SLMiniApp(title: "Samsung", icon: getImage(named: "samsungLogo"), headView: samsung),
             SLMiniApp(title: "Nike", icon: getImage(named: "nikeLogo"), headView: UIViewController()),
@@ -31,9 +39,13 @@ public func SLTopMiniAppsTarget(_ target: UIViewController) {
 
 public func SLTopMiniAppsInterTarget(_ target: UIViewController, isShow: Bool = false) {
     let samsung = UINavigationController(rootViewController: SamsungViewController())
-    
+    let targ = UINavigationController(rootViewController: SLTopMiniFirstVC ?? UIViewController())
+    targ.navigationBar.barStyle = .default
+    targ.navigationBar.tintColor = UIColor.white
+    targ.navigationBar.barTintColor = #colorLiteral(red: 0.007843137255, green: 0.2235294118, blue: 0.4039215686, alpha: 1)
+    targ.navigationBar.backgroundColor = #colorLiteral(red: 0.007843137255, green: 0.2235294118, blue: 0.4039215686, alpha: 1)
     let apps = SLTopMiniApps(title: "Mais Apps", detail: "Selecione um novo app para acessar.", isReproduce: false, apps: [
-            SLMiniApp(title: "Casas Bahia", icon: getImage(named: "CBLogo"), headView: SLTopMiniFirstVC),
+            SLMiniApp(title: "Casas Bahia", icon: getImage(named: "CBLogo"), headView: targ),
             SLMiniApp(title: "Samsung", icon: getImage(named: "samsungLogo"), headView: samsung),
             SLMiniApp(title: "Nike", icon: getImage(named: "nikeLogo"), headView: UIViewController()),
             SLMiniApp(title: "HP", icon: getImage(named: "hpLogo"), headView: UIViewController())
@@ -249,6 +261,3 @@ extension SLTopMiniApps: UICollectionViewDataSource, UICollectionViewDelegateFlo
         self.window?.rootViewController = vc
     }
 }
-
-
-
