@@ -38,8 +38,6 @@ class ModuleController: UIViewController, SectionManager {
         self.view.backgroundColor = .clear
         self.configSubviews()
         self.registerCells()
-        self.configNavBarTitle()
-        self.configureCustoms()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -51,6 +49,8 @@ class ModuleController: UIViewController, SectionManager {
         super.viewWillDisappear(animated)
         self.titleTemp = self.navigationItem.title ?? ""
         self.navigationItem.title = ""
+        self.configNavBarTitle()
+        self.configureCustoms()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -87,11 +87,7 @@ class ModuleController: UIViewController, SectionManager {
     }
     
     func addRefresh(){
-        if #available(iOS 10.0, *) {
-            moduleTableView.refreshControl = refreshControl
-        } else {
-            moduleTableView.addSubview(refreshControl)
-        }
+        moduleTableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(refreshWeatherData(_:)), for: .valueChanged)
     }
     
