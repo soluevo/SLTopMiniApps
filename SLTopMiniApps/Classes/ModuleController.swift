@@ -43,14 +43,14 @@ class ModuleController: UIViewController, SectionManager {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationItem.title = titleTemp
+        self.configNavBarTitle()
+        self.configureCustoms()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.titleTemp = self.navigationItem.title ?? ""
         self.navigationItem.title = ""
-        self.configNavBarTitle()
-        self.configureCustoms()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

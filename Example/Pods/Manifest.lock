@@ -1,5 +1,5 @@
 PODS:
-  - SLTopMiniApps (0.12.0)
+  - SLTopMiniApps (0.14.0)
 
 DEPENDENCIES:
   - SLTopMiniApps (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SLTopMiniApps: b85228efe495f093d53fa0ff0d3a79d732d93f8d
+  SLTopMiniApps: 24f0351c3ca4ab13673442e73f2acbd277e47df1
 
 PODFILE CHECKSUM: 7d5e7a51ec52ffc69bb9473041503c328ef303dc
 
