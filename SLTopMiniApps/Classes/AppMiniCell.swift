@@ -30,10 +30,10 @@ class SLAppMiniCell: UICollectionViewCell {
     lazy var title: UILabel = {
         let title = UILabel(frame: .zero)
         title.translatesAutoresizingMaskIntoConstraints = false
-        title.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
+        title.font = UIFont.systemFont(ofSize: 10, weight: .semibold)
         title.textAlignment = .center
-        title.textColor = .white
-        title.numberOfLines = 2
+        title.textColor = #colorLiteral(red: 0.6392156863, green: 0.6352941176, blue: 0.631372549, alpha: 1)
+        title.numberOfLines = 1
         return title
     }()
     
@@ -54,7 +54,9 @@ class SLAppMiniCell: UICollectionViewCell {
         icon.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
         icon.heightAnchor.constraint(equalToConstant: 60).isActive = true
         icon.widthAnchor.constraint(equalToConstant: 60).isActive = true
-        icon.layer.cornerRadius = 14
+        icon.layer.cornerRadius = 30
+        icon.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        icon.layer.borderWidth = 1
         
         self.addSubview(title)
         title.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true

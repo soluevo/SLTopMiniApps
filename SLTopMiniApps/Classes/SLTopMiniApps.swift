@@ -16,43 +16,34 @@
 
 import UIKit
 
-@available(iOS 9.0, *)
+@available(iOS 11.0, *)
 
 public var SLTopMiniFirstVC: UIViewController?
 
-public func SLTopMiniAppsWith(target: UIViewController, title: String, detail: String = "", isReproduce: Bool, apps: [SLMiniApp]) {
-    SLTopMiniApps(title: title, detail: detail, isReproduce: isReproduce, apps: apps).insertIn(target: target)
-}
-
-public func SLTopMiniAppsTarget(_ target: UIViewController) {
-    let samsung = UINavigationController(rootViewController: SamsungViewController())
+@available(iOS 11.0, *)
+public func SLTopMiniAppsTarget(_ target: UIViewController) -> UIView? {
+    let samsung = SamsungViewController()
     
     SLTopMiniFirstVC = target
-    let apps = SLTopMiniApps(title: "Mais Apps", detail: "Selecione um novo app para acessar.", isReproduce: false, apps: [
-            SLMiniApp(title: "Samsung", icon: getImage(named: "samsungLogo"), headView: samsung),
+    let apps = SLTopMiniApps([
+            SLMiniApp(title: "Samsung", icon: getImage(named: "samsung"), headView: samsung),
+            SLMiniApp(title: "Centauro", icon: getImage(named: "centauro"), headView: UIViewController()),
+            SLMiniApp(title: "Iap", icon: getImage(named: "iap"), headView: UIViewController()),
             SLMiniApp(title: "Nike", icon: getImage(named: "nikeLogo"), headView: UIViewController()),
-            SLMiniApp(title: "HP", icon: getImage(named: "hpLogo"), headView: UIViewController())
+            SLMiniApp(title: "Shoptime", icon: getImage(named: "shoptime"), headView: UIViewController()),
+            SLMiniApp(title: "Kanui", icon: getImage(named: "kanui"), headView: UIViewController()),
         ]
     )
     apps.insertIn(target: target)
+    return apps
 }
 
-public func SLTopMiniAppsInterTarget(_ target: UIViewController, isShow: Bool = false) {
-    let samsung = UINavigationController(rootViewController: SamsungViewController())
-    let targ = UINavigationController(rootViewController: SLTopMiniFirstVC ?? UIViewController())
-    targ.navigationBar.barStyle = .default
-    targ.navigationBar.tintColor = UIColor.white
-    targ.navigationBar.barTintColor = #colorLiteral(red: 0.007843137255, green: 0.2235294118, blue: 0.4039215686, alpha: 1)
-    targ.navigationBar.backgroundColor = #colorLiteral(red: 0.007843137255, green: 0.2235294118, blue: 0.4039215686, alpha: 1)
-    let apps = SLTopMiniApps(title: "Mais Apps", detail: "Selecione um novo app para acessar.", isReproduce: false, apps: [
-            SLMiniApp(title: "Casas Bahia", icon: getImage(named: "CBLogo"), headView: targ),
-            SLMiniApp(title: "Samsung", icon: getImage(named: "samsungLogo"), headView: samsung),
-            SLMiniApp(title: "Nike", icon: getImage(named: "nikeLogo"), headView: UIViewController()),
-            SLMiniApp(title: "HP", icon: getImage(named: "hpLogo"), headView: UIViewController())
-        ]
-    )
-    apps.insertIn(target: target)
-    apps.change(isShow: isShow)
+@available(iOS 11.0, *)
+public func SLTopMiniAppsInterTarget(_ target: UIViewController?, apps: [SLMiniApp]?) -> UIView? {
+    guard let apps = apps, let target = target else {return nil}
+    let stories = SLTopMiniApps(apps)
+    stories.insertIn(target: target)
+    return stories
 }
 
 public func getImage(named: String) -> UIImage {
@@ -66,13 +57,14 @@ public func getImage(named: String) -> UIImage {
 @available(iOS 9.0, *)
 class SLTopMiniApps: UIView {
     
-    var miniApps: [SLMiniApp]?
-    var target: UIViewController?
-    var isReproduce = true
+    public var miniApps: [SLMiniApp]?
+    public var target: UIViewController?
     
     lazy var collection: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.scrollDirection = .horizontal
         let obj = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+        obj.showsHorizontalScrollIndicator = false
         obj.translatesAutoresizingMaskIntoConstraints = false
         
         obj.register(SLAppMiniCell.self, forCellWithReuseIdentifier: "AppMiniCell")
@@ -80,54 +72,20 @@ class SLTopMiniApps: UIView {
         return obj
     }()
     
-    lazy var title: UILabel = {
-        let title = UILabel(frame: .zero)
-        title.translatesAutoresizingMaskIntoConstraints = false
-        title.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
-        title.textColor = .white
-        title.textAlignment = .center
-        return title
-    }()
-    
-    lazy var detail: UILabel = {
-        let title = UILabel(frame: .zero)
-        title.translatesAutoresizingMaskIntoConstraints = false
-        title.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
-        title.textAlignment = .center
-        title.textColor = .white
-        title.numberOfLines = 0
-        return title
-    }()
-    
-    public init(title: String, detail: String = "", isReproduce: Bool = true, apps: [SLMiniApp]) {
+    public init(_ apps: [SLMiniApp]) {
         super.init(frame: CGRect.zero)
-        self.title.text = title
-        self.detail.text = detail
         self.set(apps: apps)
         
-        self.alpha = 0
-        self.isHidden = true
-        
-        self.isReproduce = isReproduce
-        self.addGestures()
-        self.addBlurEffect()
+        self.layer.zPosition = 1000
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @available(iOS 11.0, *)
     public func insertIn(target: UIViewController) {
         self.insertToTarget(target)
-    }
-    
-    public func change(isShow: Bool) {
-        if isShow {
-            self.target?.view.gestureRecognizers?.forEach{$0.removeTarget(self, action: nil)}
-            self.show()
-        }else{
-            self.hide()
-        }
     }
     
     func set(apps: [SLMiniApp]?) {
@@ -137,30 +95,7 @@ class SLTopMiniApps: UIView {
         self.collection.reloadData()
     }
     
-    func show(){
-        if (self.miniApps?.count ?? 0) > 0 {
-            self.isHidden = false
-            self.layer.zPosition = 1000
-            UIView.animate(withDuration: 1) {
-//                self.target?.navigationController?.navigationBar.alpha = 0
-            }
-            UIView.animate(withDuration: 1.5) {
-                self.alpha = 1
-            }
-        }
-    }
-    
-    func hide(){
-        UIView.animate(withDuration: 1) {
-//            self.target?.navigationController?.navigationBar.alpha = 1
-        }
-        UIView.animate(withDuration: 1.5, animations: {
-            self.alpha = 0
-        }) { (_) in
-            self.isHidden = true
-        }
-    }
-    
+    @available(iOS 11.0, *)
     private func insertToTarget(_ target: UIViewController){
         self.target = target
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -168,63 +103,20 @@ class SLTopMiniApps: UIView {
         target.view.addSubview(self)
         self.leftAnchor.constraint(equalTo: target.view.leftAnchor).isActive = true
         self.rightAnchor.constraint(equalTo: target.view.rightAnchor).isActive = true
-        self.topAnchor.constraint(equalTo: target.view.topAnchor, constant: 0).isActive = true
-        self.bottomAnchor.constraint(equalTo: target.view.bottomAnchor).isActive = true
-        
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
-        swipeDown.direction = .down
-        let swipeDown2 = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
-        swipeDown2.direction = .down
-        target.view.addGestureRecognizer(swipeDown2)
-        target.navigationController?.navigationBar.addGestureRecognizer(swipeDown)
-    }
-    
-    private func addBlurEffect(){
-        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-        blurEffectView.frame = self.bounds
-        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        self.insertSubview(blurEffectView, at: 0)
-    }
-    
-    private func addGestures(){
-        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
-        swipeUp.direction = .up
-        self.addGestureRecognizer(swipeUp)
+        self.topAnchor.constraint(equalTo: target.view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+        self.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
     
     private func loadSubViews(){
-        self.addSubview(title)
-        title.topAnchor.constraint(equalTo: self.topAnchor, constant: 60).isActive = true
-        title.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15).isActive = true
-        title.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15).isActive = true
-        title.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        
         self.collection.removeFromSuperview()
         self.addSubview(collection)
         collection.delegate = self
         collection.dataSource = self
-        collection.topAnchor.constraint(equalTo: self.title.bottomAnchor, constant: 30).isActive = true
-        collection.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15).isActive = true
-        collection.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15).isActive = true
+        collection.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
+        collection.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true
+        collection.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0).isActive = true
+        collection.heightAnchor.constraint(equalToConstant: 100).isActive = true
         collection.clipsToBounds = true
-        
-        self.addSubview(detail)
-        detail.topAnchor.constraint(equalTo: collection.bottomAnchor, constant: 30).isActive = true
-        detail.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 15).isActive = true
-        detail.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -15).isActive = true
-        detail.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -50).isActive = true
-    }
-    
-    @objc func handleGesture(gesture: UISwipeGestureRecognizer) -> Void {
-        if gesture.direction == .up {
-            self.hide()
-        }else if gesture.direction == .down {
-            let point = gesture.location(in: target?.view).y
-            if point < 70 {
-                self.show()
-            }
-        }
     }
 }
 
@@ -242,9 +134,7 @@ extension SLTopMiniApps: UICollectionViewDataSource, UICollectionViewDelegateFlo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let isSmall = UIScreen.main.bounds.width <= 320
-        let width = CGFloat(UIScreen.main.bounds.width - 80) / 4.0
-        return CGSize(width: width, height: (width + width * (isSmall ? 0.7 : 0.4)))
+        return CGSize(width: 70, height: 100)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -252,12 +142,8 @@ extension SLTopMiniApps: UICollectionViewDataSource, UICollectionViewDelegateFlo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.hide()
         guard let vc = self.miniApps?[indexPath.row].headView else {return}
         
-        if isReproduce {
-            SLTopMiniApps(title: self.title.text ?? "", apps: self.miniApps!).insertIn(target: vc)
-        }
-        self.window?.rootViewController = vc
+        target?.show(vc, sender: self)
     }
 }

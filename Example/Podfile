@@ -4,6 +4,6 @@ target 'SLTopMiniApps_Example' do
   pod 'SLTopMiniApps', :path => '../'
 
   target 'SLTopMiniApps_Tests' do
-
+    pod 'SLTopMiniApps', :path => '../'
   end
 end

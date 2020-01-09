@@ -8,34 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		02A0B534D2DCB172D9568E77B388EF9C /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DD8981E4513FB89A9BBE69B3A840966 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1214B81D823C15A161CC2D8B9D8925F5 /* AppMiniCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA92D8D1A45AEBC99CB47A36F92D3A5 /* AppMiniCell.swift */; };
-		2BCA043EE2BB937F1597A17211A9973E /* ModuleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12AF60C8A5319A4F5E19CB52A79FB394 /* ModuleController.swift */; };
-		34DF4EC2384C24906F37150416C39384 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BDCE0E95157BD198D12933218B5B2 /* img3.png */; };
+		03BC4CC2E87615F9A2D3F957D87E8DD1 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E6DB3F7B284FCA0353A83389865F3F0 /* img2.png */; };
+		08E69400271E07A0CD4025B58ED5C8E8 /* hpLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 430ED06C8D725B09A814C227BA50765A /* hpLogo.png */; };
+		12039E4C86DDD521AD34114521F35188 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = FBCA10F3E0A00D2047738F5A641E657B /* menu.png */; };
+		1214B81D823C15A161CC2D8B9D8925F5 /* AppMiniCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D37D8B1911A71E2F74131DE6DC5B8B /* AppMiniCell.swift */; };
+		263318E863DBD4180A9571FB1C794B69 /* centauro.png in Resources */ = {isa = PBXBuildFile; fileRef = E69456EDFB7EA1B73C850BBAECF8BCE1 /* centauro.png */; };
+		2BCA043EE2BB937F1597A17211A9973E /* ModuleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344209FAC1E235B69C57EB41F309133 /* ModuleController.swift */; };
+		2FBF86EAB9859DAC2283930A031F1F52 /* smartphones.png in Resources */ = {isa = PBXBuildFile; fileRef = B9157FF35ED2BDE9B28A29E07A3A48D9 /* smartphones.png */; };
+		3001D29405A3CF6CD57FFC943F4AE5AF /* nikeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 15287C4CE7B619D24C89D1DFAA4FF359 /* nikeLogo.png */; };
 		491101592945BE12110C587A963B71ED /* SLTopMiniApps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5963BE7ABC59E2872F49E40BB0B0BAE /* SLTopMiniApps.bundle */; };
+		4C675999AD2058F21E96A02F3678C24B /* iap.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F627743276E41F2D7DD9CF9E13649DC /* iap.png */; };
 		53561761C8DE9B621E6327711DD8FF40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		540AAF35BB3867B4AD34A4338E826110 /* ModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5569DAF63E5F1BD4586953D95C49044A /* ModuleCell.swift */; };
-		56EA98EBD1E07CBE80FF1A24E861892E /* SamsungViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462D49E943CD87E246F50125223910A5 /* SamsungViewController.swift */; };
-		6047B18EF00F145F40E022E5B8F0D962 /* SLTopMiniApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC6ACDA570A8109CD0E2A1A55CDF44F /* SLTopMiniApps.swift */; };
-		684CC3BF28735570D74A103AB6F9E9AE /* ImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F110413FCC2EB9AB3E4B02F10ABB0596 /* ImageComponent.swift */; };
+		540AAF35BB3867B4AD34A4338E826110 /* ModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4913AD33C0CAA2FE0CEAD36BB6C28A /* ModuleCell.swift */; };
+		56EA98EBD1E07CBE80FF1A24E861892E /* SamsungViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78F212CA9625711A217541C8737C2D /* SamsungViewController.swift */; };
+		5DB09AD65D1D025F3866AAEEF2BAC9D9 /* kanui.png in Resources */ = {isa = PBXBuildFile; fileRef = A14D190B61CF34797D5FEF35DDA50E0E /* kanui.png */; };
+		5FB5B210D8D3FB7D150EFC20D7F4A5E2 /* watchs.png in Resources */ = {isa = PBXBuildFile; fileRef = B7D921B0DD6684667BECD4B6838C8154 /* watchs.png */; };
+		6047B18EF00F145F40E022E5B8F0D962 /* SLTopMiniApps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93DFD4247E4807DFA3C0B656085E93F5 /* SLTopMiniApps.swift */; };
+		684CC3BF28735570D74A103AB6F9E9AE /* ImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C251440FF75A43787CE7855F5AA3B91F /* ImageComponent.swift */; };
+		6CB40978AB5B9EB97383EEED049F05B5 /* img3.png in Resources */ = {isa = PBXBuildFile; fileRef = 71B2F00F8BAA54430E27B5167D1F8250 /* img3.png */; };
 		737EB895F00C1EAE14B27999AC9555F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		8CB83D6B0C09D22D627544F9B5C3B2AF /* hpLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 38DCFF5731E770E24303BDF3F679125E /* hpLogo.png */; };
-		8ED791DE6A8E4AEEFBEAD122423A4D68 /* nikeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = A0459E6FE8E3EE756D762A6B9F076C99 /* nikeLogo.png */; };
-		9568B02774171E55B501342EEE8FD49F /* SLTopMiniApps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E45BE6F7EC7231CAE4B1CF24FC7D0C /* SLTopMiniApps-dummy.m */; };
+		9568B02774171E55B501342EEE8FD49F /* SLTopMiniApps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 088A9DB0A3ABAE5AA83B5F901FB603C7 /* SLTopMiniApps-dummy.m */; };
+		9868C7A242561D3A1850258D42F76DC5 /* CBLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 647D04696812CD6930A560DEB1BC69AD /* CBLogo.png */; };
 		A1DF6A1A546633E18DE3F0C95EFC56FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		AAC01C7514DA170312F513A737B76659 /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = E87DE378539D0F5558019BC0312A73B4 /* img2.png */; };
-		BA0599C5688534242F3ABA4BE197A916 /* HeaderTitleModularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48756DC12A16318C6F548E8C6C18E6C6 /* HeaderTitleModularView.swift */; };
-		BAD8663CDD73AFB4660FC14F248F24A7 /* samsungLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D3D77C4E2D572AAFC7EA666A10D9AE68 /* samsungLogo.png */; };
-		C3B522EF3819A3CAB3F85E5889D89E16 /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = 27A8772B9CB6DAEA5DD3D8A0E7748145 /* img4.png */; };
+		AD2D58FC4BE787BC719F82E307D47945 /* samsung.png in Resources */ = {isa = PBXBuildFile; fileRef = C9D9366325BE371A13C606F54AFE20B6 /* samsung.png */; };
+		AEB610186BA9E318A729C6E13322C656 /* acessorios.png in Resources */ = {isa = PBXBuildFile; fileRef = F6BEC5D25BCA43C257FECF7CD7B053B8 /* acessorios.png */; };
+		B07EB6F76C9CC3FEE69CA6548926F899 /* tv.png in Resources */ = {isa = PBXBuildFile; fileRef = C870C9CAC7B54528255BB94220EAC590 /* tv.png */; };
+		BA0599C5688534242F3ABA4BE197A916 /* HeaderTitleModularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E44ABB0349CF27C1496A3184EF4098 /* HeaderTitleModularView.swift */; };
 		C8D3E2B0D3B99A2C8381760B083B32E0 /* Pods-SLTopMiniApps_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEF11CA60CD5CF6E0370A1E52101F4B /* Pods-SLTopMiniApps_Example-dummy.m */; };
-		C8D942C5E5144F8386F553A5950DCE93 /* MiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8715B997F1685B4C23D60E61A3CE161 /* MiniApp.swift */; };
-		D13F61E2A6C2BD917085146EE5345F79 /* EmptyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A767769D607E5A23C7431B117DB0FE /* EmptyComponent.swift */; };
-		D2F08815DCF5FA53A6C3AA4C16C43236 /* CBLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C8FE0FBE531124B7F85E661AA52281ED /* CBLogo.png */; };
+		C8D942C5E5144F8386F553A5950DCE93 /* MiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C821B8DB10FB9C69B9ECD4851F3A28A /* MiniApp.swift */; };
+		D13F61E2A6C2BD917085146EE5345F79 /* EmptyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CBCD409CC667B51DD42A2E6B8F4D5 /* EmptyComponent.swift */; };
+		D4E4E23EE891E5969381D8C5E8F30761 /* shoptime.png in Resources */ = {isa = PBXBuildFile; fileRef = A04A50688DDBD1EB45EE64E2A59088E7 /* shoptime.png */; };
+		E389558D531EE11E5DB15AC46A1AA50F /* informatica.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A1A7EFEAE4680EDD87708E529C9806 /* informatica.png */; };
 		E5385E460DF620BAB6B06B0C272C65F3 /* Pods-SLTopMiniApps_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41F00C0468BB0D5737976AED2F2746EA /* Pods-SLTopMiniApps_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E589C5400CF2A5B2B05434C07834879D /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 506A24DE75D415A61FB7CB4BF7C9813A /* img1.png */; };
-		E8A0D469526AA125171DD107090F514D /* SectionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCA55A1B0CF5ECF8BA8324BCB699B18 /* SectionComponent.swift */; };
-		E9F29975754DC4AEF725CFD9ACEB1B31 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABDAFF0782AF6A89A6E4D1A197C0673 /* menu.png */; };
-		EC059A1DBB77A81FAA24CF8D33B238A4 /* SLTopMiniApps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A15BC320A428000BC82E14461031DF9 /* SLTopMiniApps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E73BCAF1A03461A7475F85D6EB0AB3FC /* samsungLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB70725F3FF92C6F383E08D11D60678 /* samsungLogo.png */; };
+		E8A0D469526AA125171DD107090F514D /* SectionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F7F367ABF19AA2AC49C547DDE40A8F /* SectionComponent.swift */; };
+		EC059A1DBB77A81FAA24CF8D33B238A4 /* SLTopMiniApps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A968E5C60C3B105E7DFCE62AD955E0 /* SLTopMiniApps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F837D921182C5E46E8A04245FAD5B779 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 313E5D02F29D7ABEFF5D95196BC63585 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m */; };
+		FE7B24799F8CB1637223AD68E09D7E0F /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = A58CF24CA4C9F6AEF7C2E827A4837776 /* img1.png */; };
+		FF3EEBAF6F481CBF8173EC838DC6C409 /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = EED42CB51D72508B25FD6CE758F389D7 /* img4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,58 +74,68 @@
 
 /* Begin PBXFileReference section */
 		039835D53D32BDFBB17D494171047FFB /* SLTopMiniApps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SLTopMiniApps.framework; path = SLTopMiniApps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		070B8D29A85F73DA7B11A726EA7189A2 /* ResourceBundle-SLTopMiniApps-SLTopMiniApps-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SLTopMiniApps-SLTopMiniApps-Info.plist"; sourceTree = "<group>"; };
+		088A9DB0A3ABAE5AA83B5F901FB603C7 /* SLTopMiniApps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SLTopMiniApps-dummy.m"; sourceTree = "<group>"; };
 		0D7532085206E10DC4F745FC9065091D /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.modulemap"; sourceTree = "<group>"; };
 		0FEF11CA60CD5CF6E0370A1E52101F4B /* Pods-SLTopMiniApps_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SLTopMiniApps_Example-dummy.m"; sourceTree = "<group>"; };
-		12AF60C8A5319A4F5E19CB52A79FB394 /* ModuleController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleController.swift; path = SLTopMiniApps/Classes/ModuleController.swift; sourceTree = "<group>"; };
+		15287C4CE7B619D24C89D1DFAA4FF359 /* nikeLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = nikeLogo.png; path = SLTopMiniApps/Assets/nikeLogo.png; sourceTree = "<group>"; };
+		1C821B8DB10FB9C69B9ECD4851F3A28A /* MiniApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MiniApp.swift; path = SLTopMiniApps/Classes/MiniApp.swift; sourceTree = "<group>"; };
+		1ED4F361F6772CB184E6F1791839D97D /* SLTopMiniApps-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SLTopMiniApps-Info.plist"; sourceTree = "<group>"; };
 		2474F85AE10BC3E1EC5F374F7DD7C61F /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		27A8772B9CB6DAEA5DD3D8A0E7748145 /* img4.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img4.png; path = SLTopMiniApps/Assets/img4.png; sourceTree = "<group>"; };
-		2A15BC320A428000BC82E14461031DF9 /* SLTopMiniApps-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTopMiniApps-umbrella.h"; sourceTree = "<group>"; };
+		27EBCED70F8C608BBA9DD65E7C1E68EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2933983B89431340BC9BE49F68B186BA /* ResourceBundle-SLTopMiniApps-SLTopMiniApps-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SLTopMiniApps-SLTopMiniApps-Info.plist"; sourceTree = "<group>"; };
+		29A968E5C60C3B105E7DFCE62AD955E0 /* SLTopMiniApps-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTopMiniApps-umbrella.h"; sourceTree = "<group>"; };
 		313E5D02F29D7ABEFF5D95196BC63585 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		38DCFF5731E770E24303BDF3F679125E /* hpLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = hpLogo.png; path = SLTopMiniApps/Assets/hpLogo.png; sourceTree = "<group>"; };
-		3ADCA2F3E7618E9581BD8C38A8BAFED3 /* SLTopMiniApps.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SLTopMiniApps.modulemap; sourceTree = "<group>"; };
-		3DA92D8D1A45AEBC99CB47A36F92D3A5 /* AppMiniCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppMiniCell.swift; path = SLTopMiniApps/Classes/AppMiniCell.swift; sourceTree = "<group>"; };
 		3DD8981E4513FB89A9BBE69B3A840966 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3E4913AD33C0CAA2FE0CEAD36BB6C28A /* ModuleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleCell.swift; path = SLTopMiniApps/Classes/ModuleCell.swift; sourceTree = "<group>"; };
 		41F00C0468BB0D5737976AED2F2746EA /* Pods-SLTopMiniApps_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SLTopMiniApps_Example-umbrella.h"; sourceTree = "<group>"; };
 		42783CD2EB10D989BECC7CA16EE63687 /* Pods-SLTopMiniApps_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SLTopMiniApps_Example.modulemap"; sourceTree = "<group>"; };
-		462D49E943CD87E246F50125223910A5 /* SamsungViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SamsungViewController.swift; path = SLTopMiniApps/Classes/SamsungViewController.swift; sourceTree = "<group>"; };
-		48756DC12A16318C6F548E8C6C18E6C6 /* HeaderTitleModularView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderTitleModularView.swift; path = SLTopMiniApps/Classes/HeaderTitleModularView.swift; sourceTree = "<group>"; };
+		430ED06C8D725B09A814C227BA50765A /* hpLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = hpLogo.png; path = SLTopMiniApps/Assets/hpLogo.png; sourceTree = "<group>"; };
+		44B746A3E0126970572D29120B820383 /* SLTopMiniApps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SLTopMiniApps.xcconfig; sourceTree = "<group>"; };
 		49C601137F93CB4AAC168842342C1272 /* Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SLTopMiniApps_Example_SLTopMiniApps_Tests.framework; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A81B76207C15AA3D6A21F09C4919D5E /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		506A24DE75D415A61FB7CB4BF7C9813A /* img1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img1.png; path = SLTopMiniApps/Assets/img1.png; sourceTree = "<group>"; };
 		51F93F7B219369B585D865C9F1F1D5F9 /* Pods-SLTopMiniApps_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5569DAF63E5F1BD4586953D95C49044A /* ModuleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleCell.swift; path = SLTopMiniApps/Classes/ModuleCell.swift; sourceTree = "<group>"; };
-		576C9EB080BFA10D490CFDA389367495 /* SLTopMiniApps-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTopMiniApps-prefix.pch"; sourceTree = "<group>"; };
+		521CBCD409CC667B51DD42A2E6B8F4D5 /* EmptyComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmptyComponent.swift; path = SLTopMiniApps/Classes/EmptyComponent.swift; sourceTree = "<group>"; };
+		60A1A7EFEAE4680EDD87708E529C9806 /* informatica.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = informatica.png; path = SLTopMiniApps/Assets/informatica.png; sourceTree = "<group>"; };
 		612DA906D82BA3F374FE8D0212E0D549 /* Pods_SLTopMiniApps_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SLTopMiniApps_Example.framework; path = "Pods-SLTopMiniApps_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		647D04696812CD6930A560DEB1BC69AD /* CBLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CBLogo.png; path = SLTopMiniApps/Assets/CBLogo.png; sourceTree = "<group>"; };
+		66D37D8B1911A71E2F74131DE6DC5B8B /* AppMiniCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppMiniCell.swift; path = SLTopMiniApps/Classes/AppMiniCell.swift; sourceTree = "<group>"; };
 		68EB0131A7A1D0D635912F74E2B4AD00 /* Pods-SLTopMiniApps_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SLTopMiniApps_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6ABDAFF0782AF6A89A6E4D1A197C0673 /* menu.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = menu.png; path = SLTopMiniApps/Assets/menu.png; sourceTree = "<group>"; };
-		6FCA55A1B0CF5ECF8BA8324BCB699B18 /* SectionComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionComponent.swift; path = SLTopMiniApps/Classes/SectionComponent.swift; sourceTree = "<group>"; };
+		6AEDBE738E3A5BCBBC80D7AF799CD942 /* SLTopMiniApps-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SLTopMiniApps-prefix.pch"; sourceTree = "<group>"; };
+		6E6DB3F7B284FCA0353A83389865F3F0 /* img2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img2.png; path = SLTopMiniApps/Assets/img2.png; sourceTree = "<group>"; };
+		6FB70725F3FF92C6F383E08D11D60678 /* samsungLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = samsungLogo.png; path = SLTopMiniApps/Assets/samsungLogo.png; sourceTree = "<group>"; };
+		71B2F00F8BAA54430E27B5167D1F8250 /* img3.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img3.png; path = SLTopMiniApps/Assets/img3.png; sourceTree = "<group>"; };
 		7A28A2BF4D88FB1646E0DB35467A5346 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83E45BE6F7EC7231CAE4B1CF24FC7D0C /* SLTopMiniApps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SLTopMiniApps-dummy.m"; sourceTree = "<group>"; };
-		8902084EA668409B8FFDD46DB2A3F4D0 /* SLTopMiniApps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SLTopMiniApps.xcconfig; sourceTree = "<group>"; };
+		8B78F212CA9625711A217541C8737C2D /* SamsungViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SamsungViewController.swift; path = SLTopMiniApps/Classes/SamsungViewController.swift; sourceTree = "<group>"; };
+		8F627743276E41F2D7DD9CF9E13649DC /* iap.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = iap.png; path = SLTopMiniApps/Assets/iap.png; sourceTree = "<group>"; };
+		93DFD4247E4807DFA3C0B656085E93F5 /* SLTopMiniApps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SLTopMiniApps.swift; path = SLTopMiniApps/Classes/SLTopMiniApps.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E987ABD9C18CB0F3224346230303782 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A0459E6FE8E3EE756D762A6B9F076C99 /* nikeLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = nikeLogo.png; path = SLTopMiniApps/Assets/nikeLogo.png; sourceTree = "<group>"; };
+		A04A50688DDBD1EB45EE64E2A59088E7 /* shoptime.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = shoptime.png; path = SLTopMiniApps/Assets/shoptime.png; sourceTree = "<group>"; };
+		A14D190B61CF34797D5FEF35DDA50E0E /* kanui.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = kanui.png; path = SLTopMiniApps/Assets/kanui.png; sourceTree = "<group>"; };
+		A58CF24CA4C9F6AEF7C2E827A4837776 /* img1.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img1.png; path = SLTopMiniApps/Assets/img1.png; sourceTree = "<group>"; };
 		A5963BE7ABC59E2872F49E40BB0B0BAE /* SLTopMiniApps.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SLTopMiniApps.bundle; path = "SLTopMiniApps-SLTopMiniApps.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7F7F367ABF19AA2AC49C547DDE40A8F /* SectionComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionComponent.swift; path = SLTopMiniApps/Classes/SectionComponent.swift; sourceTree = "<group>"; };
+		AC14118EA6BCBCEAB5C97EDCF523A695 /* SLTopMiniApps.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SLTopMiniApps.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B21769365F5D2118D2BB02AF3A9ED843 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B344209FAC1E235B69C57EB41F309133 /* ModuleController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModuleController.swift; path = SLTopMiniApps/Classes/ModuleController.swift; sourceTree = "<group>"; };
 		B3B871DD6AB5713FB1E031C297CB0A25 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests-Info.plist"; sourceTree = "<group>"; };
-		B8271BEF508E3000AED08A5133C7B518 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		B84D412FDB35C03639FCBC075B1B5050 /* SLTopMiniApps.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SLTopMiniApps.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BDC6ACDA570A8109CD0E2A1A55CDF44F /* SLTopMiniApps.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SLTopMiniApps.swift; path = SLTopMiniApps/Classes/SLTopMiniApps.swift; sourceTree = "<group>"; };
+		B7D921B0DD6684667BECD4B6838C8154 /* watchs.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = watchs.png; path = SLTopMiniApps/Assets/watchs.png; sourceTree = "<group>"; };
+		B9157FF35ED2BDE9B28A29E07A3A48D9 /* smartphones.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = smartphones.png; path = SLTopMiniApps/Assets/smartphones.png; sourceTree = "<group>"; };
 		BED8380D64FC9FB12D39E40E580F9DC2 /* Pods-SLTopMiniApps_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SLTopMiniApps_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C251440FF75A43787CE7855F5AA3B91F /* ImageComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageComponent.swift; path = SLTopMiniApps/Classes/ImageComponent.swift; sourceTree = "<group>"; };
 		C38430700E4DAE8A40058E515730E8E3 /* Pods-SLTopMiniApps_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C8715B997F1685B4C23D60E61A3CE161 /* MiniApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MiniApp.swift; path = SLTopMiniApps/Classes/MiniApp.swift; sourceTree = "<group>"; };
-		C8FE0FBE531124B7F85E661AA52281ED /* CBLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = CBLogo.png; path = SLTopMiniApps/Assets/CBLogo.png; sourceTree = "<group>"; };
-		CE9BDCE0E95157BD198D12933218B5B2 /* img3.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img3.png; path = SLTopMiniApps/Assets/img3.png; sourceTree = "<group>"; };
+		C870C9CAC7B54528255BB94220EAC590 /* tv.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = tv.png; path = SLTopMiniApps/Assets/tv.png; sourceTree = "<group>"; };
+		C9D9366325BE371A13C606F54AFE20B6 /* samsung.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = samsung.png; path = SLTopMiniApps/Assets/samsung.png; sourceTree = "<group>"; };
+		CDA6152FEE1A2BC5A4DD51DDDF2AC652 /* SLTopMiniApps.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SLTopMiniApps.modulemap; sourceTree = "<group>"; };
 		D22EB30632959D13B6A6875779F7DE93 /* Pods-SLTopMiniApps_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SLTopMiniApps_Example-Info.plist"; sourceTree = "<group>"; };
-		D2A767769D607E5A23C7431B117DB0FE /* EmptyComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmptyComponent.swift; path = SLTopMiniApps/Classes/EmptyComponent.swift; sourceTree = "<group>"; };
-		D3D77C4E2D572AAFC7EA666A10D9AE68 /* samsungLogo.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = samsungLogo.png; path = SLTopMiniApps/Assets/samsungLogo.png; sourceTree = "<group>"; };
-		D69FE2931126D7D42BA37FB0FC322FFD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		DB3FB25363167768659B81146D42A1C4 /* SLTopMiniApps-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SLTopMiniApps-Info.plist"; sourceTree = "<group>"; };
+		E1E44ABB0349CF27C1496A3184EF4098 /* HeaderTitleModularView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderTitleModularView.swift; path = SLTopMiniApps/Classes/HeaderTitleModularView.swift; sourceTree = "<group>"; };
+		E69456EDFB7EA1B73C850BBAECF8BCE1 /* centauro.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = centauro.png; path = SLTopMiniApps/Assets/centauro.png; sourceTree = "<group>"; };
 		E73FA376152F3801A870EAC104929DB4 /* Pods-SLTopMiniApps_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E87DE378539D0F5558019BC0312A73B4 /* img2.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img2.png; path = SLTopMiniApps/Assets/img2.png; sourceTree = "<group>"; };
 		E8DEBF879B7CEB8FB98E3C921FFF1E00 /* Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F110413FCC2EB9AB3E4B02F10ABB0596 /* ImageComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageComponent.swift; path = SLTopMiniApps/Classes/ImageComponent.swift; sourceTree = "<group>"; };
+		EED42CB51D72508B25FD6CE758F389D7 /* img4.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = img4.png; path = SLTopMiniApps/Assets/img4.png; sourceTree = "<group>"; };
+		F6BEC5D25BCA43C257FECF7CD7B053B8 /* acessorios.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = acessorios.png; path = SLTopMiniApps/Assets/acessorios.png; sourceTree = "<group>"; };
+		FBCA10F3E0A00D2047738F5A641E657B /* menu.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = menu.png; path = SLTopMiniApps/Assets/menu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,41 +173,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AD495E833CF4267DCBD111C57D20683 /* SLTopMiniApps */ = {
-			isa = PBXGroup;
-			children = (
-				3DA92D8D1A45AEBC99CB47A36F92D3A5 /* AppMiniCell.swift */,
-				D2A767769D607E5A23C7431B117DB0FE /* EmptyComponent.swift */,
-				48756DC12A16318C6F548E8C6C18E6C6 /* HeaderTitleModularView.swift */,
-				F110413FCC2EB9AB3E4B02F10ABB0596 /* ImageComponent.swift */,
-				C8715B997F1685B4C23D60E61A3CE161 /* MiniApp.swift */,
-				5569DAF63E5F1BD4586953D95C49044A /* ModuleCell.swift */,
-				12AF60C8A5319A4F5E19CB52A79FB394 /* ModuleController.swift */,
-				462D49E943CD87E246F50125223910A5 /* SamsungViewController.swift */,
-				6FCA55A1B0CF5ECF8BA8324BCB699B18 /* SectionComponent.swift */,
-				BDC6ACDA570A8109CD0E2A1A55CDF44F /* SLTopMiniApps.swift */,
-				128F11BA4025DF307DE83AF7506D53F6 /* Pod */,
-				D116D88A4321C135205958D17002D707 /* Resources */,
-				87F851F62A4C9DBCC0352296D9B56C46 /* Support Files */,
-			);
-			name = SLTopMiniApps;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		128F11BA4025DF307DE83AF7506D53F6 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				D69FE2931126D7D42BA37FB0FC322FFD /* LICENSE */,
-				B8271BEF508E3000AED08A5133C7B518 /* README.md */,
-				B84D412FDB35C03639FCBC075B1B5050 /* SLTopMiniApps.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		251E17613C986F858118D2A341134737 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0AD495E833CF4267DCBD111C57D20683 /* SLTopMiniApps */,
+				E9055DFD069C431EA51111F9F5AC4A55 /* SLTopMiniApps */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -218,19 +207,55 @@
 			path = "Target Support Files/Pods-SLTopMiniApps_Example-SLTopMiniApps_Tests";
 			sourceTree = "<group>";
 		};
-		87F851F62A4C9DBCC0352296D9B56C46 /* Support Files */ = {
+		7F0DF0648267031B2CDFA993A7C0E58B /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				070B8D29A85F73DA7B11A726EA7189A2 /* ResourceBundle-SLTopMiniApps-SLTopMiniApps-Info.plist */,
-				3ADCA2F3E7618E9581BD8C38A8BAFED3 /* SLTopMiniApps.modulemap */,
-				8902084EA668409B8FFDD46DB2A3F4D0 /* SLTopMiniApps.xcconfig */,
-				83E45BE6F7EC7231CAE4B1CF24FC7D0C /* SLTopMiniApps-dummy.m */,
-				DB3FB25363167768659B81146D42A1C4 /* SLTopMiniApps-Info.plist */,
-				576C9EB080BFA10D490CFDA389367495 /* SLTopMiniApps-prefix.pch */,
-				2A15BC320A428000BC82E14461031DF9 /* SLTopMiniApps-umbrella.h */,
+				27EBCED70F8C608BBA9DD65E7C1E68EC /* LICENSE */,
+				B21769365F5D2118D2BB02AF3A9ED843 /* README.md */,
+				AC14118EA6BCBCEAB5C97EDCF523A695 /* SLTopMiniApps.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		824B7C6FF7A5A8E4524A119F88781517 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2933983B89431340BC9BE49F68B186BA /* ResourceBundle-SLTopMiniApps-SLTopMiniApps-Info.plist */,
+				CDA6152FEE1A2BC5A4DD51DDDF2AC652 /* SLTopMiniApps.modulemap */,
+				44B746A3E0126970572D29120B820383 /* SLTopMiniApps.xcconfig */,
+				088A9DB0A3ABAE5AA83B5F901FB603C7 /* SLTopMiniApps-dummy.m */,
+				1ED4F361F6772CB184E6F1791839D97D /* SLTopMiniApps-Info.plist */,
+				6AEDBE738E3A5BCBBC80D7AF799CD942 /* SLTopMiniApps-prefix.pch */,
+				29A968E5C60C3B105E7DFCE62AD955E0 /* SLTopMiniApps-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/SLTopMiniApps";
+			sourceTree = "<group>";
+		};
+		905CA1D32B5B76A7C1F937D0E16CA12B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6BEC5D25BCA43C257FECF7CD7B053B8 /* acessorios.png */,
+				647D04696812CD6930A560DEB1BC69AD /* CBLogo.png */,
+				E69456EDFB7EA1B73C850BBAECF8BCE1 /* centauro.png */,
+				430ED06C8D725B09A814C227BA50765A /* hpLogo.png */,
+				8F627743276E41F2D7DD9CF9E13649DC /* iap.png */,
+				A58CF24CA4C9F6AEF7C2E827A4837776 /* img1.png */,
+				6E6DB3F7B284FCA0353A83389865F3F0 /* img2.png */,
+				71B2F00F8BAA54430E27B5167D1F8250 /* img3.png */,
+				EED42CB51D72508B25FD6CE758F389D7 /* img4.png */,
+				60A1A7EFEAE4680EDD87708E529C9806 /* informatica.png */,
+				A14D190B61CF34797D5FEF35DDA50E0E /* kanui.png */,
+				FBCA10F3E0A00D2047738F5A641E657B /* menu.png */,
+				15287C4CE7B619D24C89D1DFAA4FF359 /* nikeLogo.png */,
+				C9D9366325BE371A13C606F54AFE20B6 /* samsung.png */,
+				6FB70725F3FF92C6F383E08D11D60678 /* samsungLogo.png */,
+				A04A50688DDBD1EB45EE64E2A59088E7 /* shoptime.png */,
+				B9157FF35ED2BDE9B28A29E07A3A48D9 /* smartphones.png */,
+				C870C9CAC7B54528255BB94220EAC590 /* tv.png */,
+				B7D921B0DD6684667BECD4B6838C8154 /* watchs.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		A8A422017A4930B33E6615F40B955C5F /* Pods-SLTopMiniApps_Example */ = {
@@ -269,22 +294,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		D116D88A4321C135205958D17002D707 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C8FE0FBE531124B7F85E661AA52281ED /* CBLogo.png */,
-				38DCFF5731E770E24303BDF3F679125E /* hpLogo.png */,
-				506A24DE75D415A61FB7CB4BF7C9813A /* img1.png */,
-				E87DE378539D0F5558019BC0312A73B4 /* img2.png */,
-				CE9BDCE0E95157BD198D12933218B5B2 /* img3.png */,
-				27A8772B9CB6DAEA5DD3D8A0E7748145 /* img4.png */,
-				6ABDAFF0782AF6A89A6E4D1A197C0673 /* menu.png */,
-				A0459E6FE8E3EE756D762A6B9F076C99 /* nikeLogo.png */,
-				D3D77C4E2D572AAFC7EA666A10D9AE68 /* samsungLogo.png */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +311,27 @@
 				039835D53D32BDFBB17D494171047FFB /* SLTopMiniApps.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E9055DFD069C431EA51111F9F5AC4A55 /* SLTopMiniApps */ = {
+			isa = PBXGroup;
+			children = (
+				66D37D8B1911A71E2F74131DE6DC5B8B /* AppMiniCell.swift */,
+				521CBCD409CC667B51DD42A2E6B8F4D5 /* EmptyComponent.swift */,
+				E1E44ABB0349CF27C1496A3184EF4098 /* HeaderTitleModularView.swift */,
+				C251440FF75A43787CE7855F5AA3B91F /* ImageComponent.swift */,
+				1C821B8DB10FB9C69B9ECD4851F3A28A /* MiniApp.swift */,
+				3E4913AD33C0CAA2FE0CEAD36BB6C28A /* ModuleCell.swift */,
+				B344209FAC1E235B69C57EB41F309133 /* ModuleController.swift */,
+				8B78F212CA9625711A217541C8737C2D /* SamsungViewController.swift */,
+				A7F7F367ABF19AA2AC49C547DDE40A8F /* SectionComponent.swift */,
+				93DFD4247E4807DFA3C0B656085E93F5 /* SLTopMiniApps.swift */,
+				7F0DF0648267031B2CDFA993A7C0E58B /* Pod */,
+				905CA1D32B5B76A7C1F937D0E16CA12B /* Resources */,
+				824B7C6FF7A5A8E4524A119F88781517 /* Support Files */,
+			);
+			name = SLTopMiniApps;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,7 +389,7 @@
 			buildPhases = (
 				8E6D9D60EFE447E52203C2D4E9FC2E97 /* Sources */,
 				8A5985E34CAFD7DE984F18E2BA88EED9 /* Frameworks */,
-				648E5238CC4E9CAD99D87A57234FA99E /* Resources */,
+				52A37A4EB7D82D3E7D244D88658D7225 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -438,19 +468,29 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		648E5238CC4E9CAD99D87A57234FA99E /* Resources */ = {
+		52A37A4EB7D82D3E7D244D88658D7225 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2F08815DCF5FA53A6C3AA4C16C43236 /* CBLogo.png in Resources */,
-				8CB83D6B0C09D22D627544F9B5C3B2AF /* hpLogo.png in Resources */,
-				E589C5400CF2A5B2B05434C07834879D /* img1.png in Resources */,
-				AAC01C7514DA170312F513A737B76659 /* img2.png in Resources */,
-				34DF4EC2384C24906F37150416C39384 /* img3.png in Resources */,
-				C3B522EF3819A3CAB3F85E5889D89E16 /* img4.png in Resources */,
-				E9F29975754DC4AEF725CFD9ACEB1B31 /* menu.png in Resources */,
-				8ED791DE6A8E4AEEFBEAD122423A4D68 /* nikeLogo.png in Resources */,
-				BAD8663CDD73AFB4660FC14F248F24A7 /* samsungLogo.png in Resources */,
+				AEB610186BA9E318A729C6E13322C656 /* acessorios.png in Resources */,
+				9868C7A242561D3A1850258D42F76DC5 /* CBLogo.png in Resources */,
+				263318E863DBD4180A9571FB1C794B69 /* centauro.png in Resources */,
+				08E69400271E07A0CD4025B58ED5C8E8 /* hpLogo.png in Resources */,
+				4C675999AD2058F21E96A02F3678C24B /* iap.png in Resources */,
+				FE7B24799F8CB1637223AD68E09D7E0F /* img1.png in Resources */,
+				03BC4CC2E87615F9A2D3F957D87E8DD1 /* img2.png in Resources */,
+				6CB40978AB5B9EB97383EEED049F05B5 /* img3.png in Resources */,
+				FF3EEBAF6F481CBF8173EC838DC6C409 /* img4.png in Resources */,
+				E389558D531EE11E5DB15AC46A1AA50F /* informatica.png in Resources */,
+				5DB09AD65D1D025F3866AAEEF2BAC9D9 /* kanui.png in Resources */,
+				12039E4C86DDD521AD34114521F35188 /* menu.png in Resources */,
+				3001D29405A3CF6CD57FFC943F4AE5AF /* nikeLogo.png in Resources */,
+				AD2D58FC4BE787BC719F82E307D47945 /* samsung.png in Resources */,
+				E73BCAF1A03461A7475F85D6EB0AB3FC /* samsungLogo.png in Resources */,
+				D4E4E23EE891E5969381D8C5E8F30761 /* shoptime.png in Resources */,
+				2FBF86EAB9859DAC2283930A031F1F52 /* smartphones.png in Resources */,
+				B07EB6F76C9CC3FEE69CA6548926F899 /* tv.png in Resources */,
+				5FB5B210D8D3FB7D150EFC20D7F4A5E2 /* watchs.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,7 +586,7 @@
 /* Begin XCBuildConfiguration section */
 		16D6500FDF4921CEE9F831A51C90323B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8902084EA668409B8FFDD46DB2A3F4D0 /* SLTopMiniApps.xcconfig */;
+			baseConfigurationReference = 44B746A3E0126970572D29120B820383 /* SLTopMiniApps.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -611,7 +651,7 @@
 		};
 		426DC177720110B6F8F528236C367252 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8902084EA668409B8FFDD46DB2A3F4D0 /* SLTopMiniApps.xcconfig */;
+			baseConfigurationReference = 44B746A3E0126970572D29120B820383 /* SLTopMiniApps.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SLTopMiniApps";
@@ -627,7 +667,7 @@
 		};
 		621A00BE5D7FB32D64E7C877E751C4D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8902084EA668409B8FFDD46DB2A3F4D0 /* SLTopMiniApps.xcconfig */;
+			baseConfigurationReference = 44B746A3E0126970572D29120B820383 /* SLTopMiniApps.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -883,7 +923,7 @@
 		};
 		CAD54F7A3F7B7E605E65A842C5FC9031 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8902084EA668409B8FFDD46DB2A3F4D0 /* SLTopMiniApps.xcconfig */;
+			baseConfigurationReference = 44B746A3E0126970572D29120B820383 /* SLTopMiniApps.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SLTopMiniApps";

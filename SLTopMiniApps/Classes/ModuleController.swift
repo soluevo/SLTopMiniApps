@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 11.0, *)
 class ModuleController: UIViewController, SectionManager {
     var componentsTemp = [SectionComponent]()
     var showMenu = false
@@ -63,16 +64,6 @@ class ModuleController: UIViewController, SectionManager {
         ]
         
         navigationController?.navigationBar.titleTextAttributes = textAttributes
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: getImage(named: "menu"), style: .done, target: self, action: #selector(menuAction))
-    }
-    
-    @objc func menuAction(){
-        self.showMenu = !self.showMenu
-        if self.showMenu {
-            SLTopMiniAppsInterTarget(self, isShow: true)
-        }else{
-            self.view.subviews.forEach{($0 as? SLTopMiniApps)?.removeFromSuperview()}
-        }
     }
     
     private func configureCustoms(){
@@ -86,7 +77,7 @@ class ModuleController: UIViewController, SectionManager {
         self.view.addSubview(moduleTableView)
         moduleTableView.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         moduleTableView.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive = true
-        self.topConstraint = moduleTableView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0)
+        self.topConstraint = moduleTableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 0)
         self.topConstraint?.isActive = true
         moduleTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
         
@@ -135,7 +126,7 @@ class ModuleController: UIViewController, SectionManager {
         self.moduleTableView.reloadRows(at: [IndexPath(row: index, section: sec)], with: .fade)
     }
     
-    func setTopMarging(){ self.topConstraint?.constant = 20 }
+    func setTopMarging(_ marging: Int = 20){ self.topConstraint?.constant = CGFloat(marging) }
     
     func setNoneTop(){
         let topBarHeight = UIApplication.shared.statusBarFrame.size.height
@@ -150,6 +141,7 @@ class ModuleController: UIViewController, SectionManager {
     }
 }
 
+@available(iOS 11.0, *)
 extension ModuleController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
