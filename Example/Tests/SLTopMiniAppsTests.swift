@@ -14,11 +14,6 @@ import XCTest
 @available(iOS 11.0, *)
 class SLTopMiniAppsTests: XCTestCase {
     
-    func testCreateMiniApp(){
-        let view = SLTopMiniAppsTarget(UIViewController())
-        XCTAssertTrue(view != nil)
-    }
-    
     func testCreateInterMiniApp(){
         let itens = [
             SLMiniApp(title: "Samsung", icon: UIImage(), headView: UIViewController()),
@@ -48,7 +43,7 @@ class SLTopMiniAppsTests: XCTestCase {
             SLMiniApp(title: "Shoptime", icon: UIImage(), headView: UIViewController()),
             SLMiniApp(title: "Kanui", icon: UIImage(), headView: UIViewController())
         ]
-        let apps = SLTopMiniAppsInterTarget(UIViewController(), apps: itens) as? SLTopMiniApps
+        let apps = SLTopMiniAppsInterTarget(UIViewController(), apps: nil) as? SLTopMiniApps
         XCTAssertNotNil(apps?.target)
         XCTAssertNotNil(apps?.miniApps)
     }

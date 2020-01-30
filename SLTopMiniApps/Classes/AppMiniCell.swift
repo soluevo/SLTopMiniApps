@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 @available(iOS 8.2, *)
 @available(iOS 9.0, *)
@@ -15,6 +16,9 @@ class SLAppMiniCell: UICollectionViewCell {
     var miniApp: SLMiniApp? {
         didSet{
             self.icon.image = miniApp?.icon
+            if let urlStr = miniApp?.iconUrl, let url = URL(string: urlStr) {
+                self.icon.af_setImage(withURL: url)
+            }
             self.title.text = miniApp?.title
         }
     }

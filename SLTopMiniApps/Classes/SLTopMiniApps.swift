@@ -15,6 +15,7 @@
 //
 
 import UIKit
+import AlamofireNetworkActivityLogger
 
 @available(iOS 11.0, *)
 
@@ -22,20 +23,23 @@ public var SLTopMiniFirstVC: UIViewController?
 
 @available(iOS 11.0, *)
 public func SLTopMiniAppsTarget(_ target: UIViewController) -> UIView? {
-    let samsung = SamsungViewController()
+    
+    NetworkActivityLogger.shared.startLogging()
+    NetworkActivityLogger.shared.level = .debug
     
     SLTopMiniFirstVC = target
-    let apps = SLTopMiniApps([
-            SLMiniApp(title: "Samsung", icon: getImage(named: "samsung"), headView: samsung),
-            SLMiniApp(title: "Centauro", icon: getImage(named: "centauro"), headView: UIViewController()),
-            SLMiniApp(title: "Iap", icon: getImage(named: "iap"), headView: UIViewController()),
-            SLMiniApp(title: "Nike", icon: getImage(named: "nikeLogo"), headView: UIViewController()),
-            SLMiniApp(title: "Shoptime", icon: getImage(named: "shoptime"), headView: UIViewController()),
-            SLMiniApp(title: "Kanui", icon: getImage(named: "kanui"), headView: UIViewController()),
-        ]
-    )
-    apps.insertIn(target: target)
-    return apps
+    let topApps = SLTopMiniApps()
+    
+    ConfigManager.instance.getCompanies(completion: { (companyArray) in
+        var apps = [SLMiniApp]()
+        companyArray.forEach{
+            apps.append(SLMiniApp(title: $0.name, iconUrl: $0.iconUrl, headView: CompanyViewController(), object: $0))
+        }
+        topApps.set(apps: apps)
+    })
+    
+    topApps.insertIn(target: target)
+    return topApps
 }
 
 @available(iOS 11.0, *)
@@ -72,7 +76,7 @@ class SLTopMiniApps: UIView {
         return obj
     }()
     
-    public init(_ apps: [SLMiniApp]) {
+    public init(_ apps: [SLMiniApp]? = nil) {
         super.init(frame: CGRect.zero)
         self.set(apps: apps)
         
@@ -142,8 +146,19 @@ extension SLTopMiniApps: UICollectionViewDataSource, UICollectionViewDelegateFlo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let vc = self.miniApps?[indexPath.row].headView else {return}
-        
-        target?.show(vc, sender: self)
+        let miniApp = self.miniApps?[indexPath.row]
+        if #available(iOS 11.0, *) {
+            if let vc = miniApp?.headView as? CompanyViewController, let object = miniApp?.object as? CompanyModel{
+                vc.company = object
+                ConfigManager.instance.companySelected = object
+                target?.show(vc, sender: self)
+            }
+            if let vc = miniApp?.headView as? ProductListViewController {
+                ConfigManager.instance.getProducts(completion: { (productsArray) in
+                    vc.products = productsArray
+                    self.target?.show(vc, sender: self)
+                })
+            }
+        }
     }
 }

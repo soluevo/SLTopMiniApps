@@ -1,16 +1,59 @@
 PODS:
-  - SLTopMiniApps (0.14.0)
+  - Alamofire (4.9.1)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - AlamofireNetworkActivityLogger (2.4.0):
+    - Alamofire (~> 4.8)
+  - Cosmos (20.0.1)
+  - Disk (0.6.4)
+  - HandyJSON (5.0.1)
+  - Realm (4.3.0):
+    - Realm/Headers (= 4.3.0)
+  - Realm/Headers (4.3.0)
+  - RealmSwift (4.3.0):
+    - Realm (= 4.3.0)
+  - SLTopMiniApps (0.15.0):
+    - Alamofire (= 4.9.1)
+    - AlamofireImage
+    - AlamofireNetworkActivityLogger
+    - Cosmos
+    - Disk
+    - HandyJSON
+    - RealmSwift
+    - SwiftyJSON
+  - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - SLTopMiniApps (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - AlamofireNetworkActivityLogger
+    - Cosmos
+    - Disk
+    - HandyJSON
+    - Realm
+    - RealmSwift
+    - SwiftyJSON
 
 EXTERNAL SOURCES:
   SLTopMiniApps:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SLTopMiniApps: 24f0351c3ca4ab13673442e73f2acbd277e47df1
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  AlamofireNetworkActivityLogger: 6d3398c692d2c5d83b0c58793537860aca1e383d
+  Cosmos: b47fddf2102bb48580cd3025d9ce0a5c658a65da
+  Disk: dcee5c2e98fb72f9a924cde8da8435b08244a80e
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  Realm: 9357c3589555793e1860a7104a7412bca4a48d99
+  RealmSwift: 402f1e379a8ef82c635313037b043f0f06de880c
+  SLTopMiniApps: abbd9b5d13b1ec0935c7c8868b5e235498c7142b
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 7d5e7a51ec52ffc69bb9473041503c328ef303dc
+PODFILE CHECKSUM: 0213d32a765bd31062d35adfd391cf8200bae261
 
 COCOAPODS: 1.7.2

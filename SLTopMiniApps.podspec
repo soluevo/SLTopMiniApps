@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SLTopMiniApps'
-  s.version          = '0.14.0'
+  s.version          = '0.16.0'
   s.summary          = 'This framework was created to make it easy to create a pull to down menu.'
 
   s.homepage         = 'https://github.com/soluevo/SLTopMiniApps'
@@ -19,6 +19,15 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  
+  s.dependency 'Alamofire', "= 4.9.1"
+  s.dependency 'AlamofireImage'
+  s.dependency 'HandyJSON'
+  s.dependency 'RealmSwift'
+  s.dependency 'SwiftyJSON'
+  s.dependency 'Disk'
+  s.dependency 'AlamofireNetworkActivityLogger'
+  s.dependency 'Cosmos'
 
   s.source_files = 'SLTopMiniApps/Classes/**/*'
   
