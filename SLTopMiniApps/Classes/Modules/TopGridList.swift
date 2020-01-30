@@ -84,7 +84,7 @@ class TopBarGridList: UIView {
         let obj = UIImageView(frame: .zero)
         obj.translatesAutoresizingMaskIntoConstraints = false
         obj.contentMode = .scaleAspectFit
-        obj.image = #imageLiteral(resourceName: "arrow").getInColor(selectedColor)
+        obj.image = getImage(named: "arrow").getInColor(selectedColor)
         obj.transform = CGAffineTransform(rotationAngle: .pi/2)
         return obj
     }()

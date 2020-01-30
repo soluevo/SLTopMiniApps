@@ -7,6 +7,7 @@
 
 import UIKit
 import LocalAuthentication
+import SVProgressHUD
 
 @available(iOS 11.0, *)
 class MAModuleController: UIViewController, MASectionManager {
@@ -292,6 +293,41 @@ extension UINavigationController {
     
 }
 
+extension UIViewController {
+    func showLoading() {
+        self.view.isUserInteractionEnabled = false
+        self.view.subviews.forEach({ (view) in
+            view.isUserInteractionEnabled = false
+        })
+        SVProgressHUD.show()
+    }
+    
+    func hideLoading() {
+        self.view.isUserInteractionEnabled = true
+        self.view.subviews.forEach({ (view) in
+            view.isUserInteractionEnabled = true
+        })
+        SVProgressHUD.dismiss()
+    }
+}
+
+extension UIView {
+    func showLoading() {
+        self.isUserInteractionEnabled = false
+        self.subviews.forEach({ (view) in
+            view.isUserInteractionEnabled = false
+        })
+        SVProgressHUD.show()
+    }
+    
+    func hideLoading() {
+        self.isUserInteractionEnabled = true
+        self.subviews.forEach({ (view) in
+            view.isUserInteractionEnabled = true
+        })
+        SVProgressHUD.dismiss()
+    }
+}
 
 
 

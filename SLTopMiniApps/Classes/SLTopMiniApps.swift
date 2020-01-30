@@ -16,6 +16,7 @@
 
 import UIKit
 import AlamofireNetworkActivityLogger
+import SVProgressHUD
 
 @available(iOS 11.0, *)
 
@@ -154,7 +155,9 @@ extension SLTopMiniApps: UICollectionViewDataSource, UICollectionViewDelegateFlo
                 target?.show(vc, sender: self)
             }
             if let vc = miniApp?.headView as? ProductListViewController {
+                self.showLoading()
                 ConfigManager.instance.getProducts(completion: { (productsArray) in
+                    self.hideLoading()
                     vc.products = productsArray
                     self.target?.show(vc, sender: self)
                 })
