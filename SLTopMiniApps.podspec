@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SLTopMiniApps'
-  s.version          = '0.17.0'
+  s.version          = '0.18.0'
   s.summary          = 'This framework was created to make it easy to create a pull to down menu.'
 
   s.homepage         = 'https://github.com/soluevo/SLTopMiniApps'
@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
   s.dependency 'AlamofireNetworkActivityLogger'
   s.dependency 'Cosmos'
   s.dependency 'SVProgressHUD'
+  s.dependency 'ESTabBarController-swift'
 
   s.source_files = 'SLTopMiniApps/Classes/**/*'
   

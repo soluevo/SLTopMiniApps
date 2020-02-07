@@ -17,7 +17,12 @@ class ProductListViewController: MAModuleController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.loadComponents()
+        self.showLoading()
+        ConfigManager.instance.getProducts(completion: { (productsArray) in
+            self.hideLoading()
+            self.products = productsArray
+            self.loadComponents()
+        })
     }
     
     func loadComponents(){

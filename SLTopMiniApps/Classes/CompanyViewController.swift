@@ -16,14 +16,17 @@ class CompanyViewController: MAModuleController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.loadComponents()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         var apps = [SLMiniApp]()
-        self.company?.companyFilters?.forEach({ (companyFilter) in
+        ConfigManager.instance.companySelected?.companyFilters?.forEach({ (companyFilter) in
             apps.append(SLMiniApp(title: companyFilter.name, iconUrl: companyFilter.imageUrl, headView: ProductListViewController(), object: companyFilter))
         })
         let _ = SLTopMiniAppsInterTarget(self, apps: apps)
         self.setTopMarging(110)
-        
-        self.loadComponents()
     }
     
     func loadComponents(){

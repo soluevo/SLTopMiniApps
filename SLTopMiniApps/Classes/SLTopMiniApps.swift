@@ -34,7 +34,7 @@ public func SLTopMiniAppsTarget(_ target: UIViewController) -> UIView? {
     ConfigManager.instance.getCompanies(completion: { (companyArray) in
         var apps = [SLMiniApp]()
         companyArray.forEach{
-            apps.append(SLMiniApp(title: $0.name, iconUrl: $0.iconUrl, headView: CompanyViewController(), object: $0))
+            apps.append(SLMiniApp(title: $0.name, iconUrl: $0.iconUrl, headView: TabBarController(), object: $0))
         }
         topApps.set(apps: apps)
     })
@@ -149,8 +149,11 @@ extension SLTopMiniApps: UICollectionViewDataSource, UICollectionViewDelegateFlo
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let miniApp = self.miniApps?[indexPath.row]
         if #available(iOS 11.0, *) {
-            if let vc = miniApp?.headView as? CompanyViewController, let object = miniApp?.object as? CompanyModel{
-                vc.company = object
+            if let vc = miniApp?.headView as? TabBarController, let object = miniApp?.object as? CompanyModel{
+                vc.viewControllers = [
+                    vc.getMainViewController(),
+                    vc.getProductsViewController(),
+                ]
                 ConfigManager.instance.companySelected = object
                 target?.show(vc, sender: self)
             }
