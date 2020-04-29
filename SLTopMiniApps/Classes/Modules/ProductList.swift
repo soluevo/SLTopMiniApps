@@ -124,6 +124,7 @@ class ProductList: UIView {
         price.topAnchor.constraint(equalTo: self.stars.bottomAnchor, constant: 5).isActive = true
         price.leftAnchor.constraint(equalTo: self.image.rightAnchor, constant: 10).isActive = true
         price.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -20).isActive = true
+        price.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
         self.addSubview(priceDetail)
         priceDetail.topAnchor.constraint(equalTo: self.price.bottomAnchor, constant: 5).isActive = true
